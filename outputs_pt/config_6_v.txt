@@ -1,0 +1,2864 @@
+(Log):  Simulator using config file configs/config_6.properties
+(Log):  Processes: x y
+(Log):  Trace for process x(0): [loadReg0Immediate 0, printreg0, loadReg1Immediate 0003, printreg1, Syscall_Alloc, loadReg0PageAddr 0, loadReg1PageAddr 0003, printreg1, storeReg0Indirect 0, incrReg0 4, printreg0, branch_eq 2, branch_uc -4, loadReg0PageAddr 0, loadReg1PageAddr 0, loadReg0Indirect 0, printreg0, branch_eq 5, printreg0, printreg1, printStr Error: Should have been equal, Syscall_Exit, incrReg0 4, printreg0, loadReg1PageAddr 0003, branch_eq 10, incrReg0 -4, printreg0, loadReg1Indirect 0, printreg1, incrReg0 4, printreg0, incrReg1 4, printreg0, branch_uc -19, printStr Success!, Syscall_Exit]
+(Log):  Trace for process y(1): [loadReg0Immediate 0, printreg0, loadReg1Immediate 0003, printreg1, Syscall_Alloc, loadReg0PageAddr 0, loadReg1PageAddr 0003, printreg1, storeReg0Indirect 0, incrReg0 4, printreg0, branch_eq 2, branch_uc -4, loadReg0PageAddr 0, loadReg1PageAddr 0, loadReg0Indirect 0, printreg0, branch_eq 5, printreg0, printreg1, printStr Error: Should have been equal, Syscall_Exit, incrReg0 4, printreg0, loadReg1PageAddr 0003, branch_eq 10, incrReg0 -4, printreg0, loadReg1Indirect 0, printreg1, incrReg0 4, printreg0, incrReg1 4, printreg0, branch_uc -19, printStr Success!, Syscall_Exit]
+(Log):  PageBytesLog2: 3
+(Log):  FrameCountLog2: 3
+(Log):  PageCountLog2: 5
+(Log):  LevelOnePTEntryCountLog2: 3
+(Info): CPU 0 going idle at time 0.
+(Info): Advancing time to 1
+(Info): Starting Process x(0) at time 1.
+(Info): Dispatching Process x(0) at time 1 with quantum 4.
+(Info): Translating (instruction) virtual address 0x0
+(Log):  CPU 0 Xlation Fault: page 0
+(Info): Instruction page fault at 0x0 in process 0 (page number 0)
+(Log):  CPU 0 Xlation Hit: page/frame 0->0
+(Log):  Instruction fault for Process x(0) at ip 0x0 resolved to physical address 0x0
+(Info): Translating (instruction) virtual address 0x0
+(Log):  CPU 0 Xlation Hit: page/frame 0->0
+(Info): Fetching instruction from physical address 0x0
+(Info): Advancing time to 2
+(Info): CPU 0 executing instruction 'loadReg0Immediate 0' for process 0 at ip va/pa 0x0/0x0
+(Info): *** (loadReg0Immediate 0) 'Reg0 = 0x0' Reg0 now 0x0
+(Info): Translating (instruction) virtual address 0x4
+(Log):  CPU 0 Xlation Hit: page/frame 0->0
+(Info): Fetching instruction from physical address 0x4
+(Info): Advancing time to 3
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x4/0x4
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x0
+(Info): Translating (instruction) virtual address 0x8
+(Log):  CPU 0 Xlation Fault: page 1
+(Info): Instruction page fault at 0x8 in process 0 (page number 1)
+(Log):  CPU 0 Xlation Hit: page/frame 1->1
+(Log):  Instruction fault for Process x(0) at ip 0x8 resolved to physical address 0x8
+(Info): Translating (instruction) virtual address 0x8
+(Log):  CPU 0 Xlation Hit: page/frame 1->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Advancing time to 4
+(Info): CPU 0 executing instruction 'loadReg1Immediate 0003' for process 0 at ip va/pa 0x8/0x8
+(Info): *** (loadReg1Immediate 0003) 'Reg1 = 0x3' Reg1 now 0x3
+(Info): Translating (instruction) virtual address 0xc
+(Log):  CPU 0 Xlation Hit: page/frame 1->1
+(Info): Fetching instruction from physical address 0xc
+(Info): Advancing time to 5
+(Info): CPU 0 executing instruction 'printreg1' for process 0 at ip va/pa 0xc/0xc
+(Info): *** (printreg1) 
+(Log):  [PrintReg 1]  0x3
+(Info): Quantum expired for Process x(0) at time 5 after 4 ticks.
+(Info): Dispatching Process x(0) at time 5 with quantum 4.
+(Info): Translating (instruction) virtual address 0x10
+(Log):  CPU 0 Xlation Fault: page 2
+(Info): Instruction page fault at 0x10 in process 0 (page number 2)
+(Log):  CPU 0 Xlation Hit: page/frame 2->2
+(Log):  Instruction fault for Process x(0) at ip 0x10 resolved to physical address 0x10
+(Info): Translating (instruction) virtual address 0x10
+(Log):  CPU 0 Xlation Hit: page/frame 2->2
+(Info): Fetching instruction from physical address 0x10
+(Info): Advancing time to 6
+(Info): CPU 0 executing instruction 'Syscall_Alloc' for process 0 at ip va/pa 0x10/0x10
+(Info): *** (Syscall_Alloc) SyscallAlloc start page 0x0 for 0x3 pages
+(Info): Translating (instruction) virtual address 0x14
+(Log):  CPU 0 Xlation Hit: page/frame 2->2
+(Info): Fetching instruction from physical address 0x14
+(Info): Advancing time to 7
+(Info): CPU 0 executing instruction 'loadReg0PageAddr 0' for process 0 at ip va/pa 0x14/0x14
+(Info): *** (loadReg0PageAddr 0) 'Reg0 = 0x0' Reg0 now 0x0
+(Info): Translating (instruction) virtual address 0x18
+(Log):  CPU 0 Xlation Fault: page 3
+(Info): Instruction page fault at 0x18 in process 0 (page number 3)
+(Log):  CPU 0 Xlation Hit: page/frame 3->3
+(Log):  Instruction fault for Process x(0) at ip 0x18 resolved to physical address 0x18
+(Info): Translating (instruction) virtual address 0x18
+(Log):  CPU 0 Xlation Hit: page/frame 3->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Advancing time to 8
+(Info): CPU 0 executing instruction 'loadReg1PageAddr 0003' for process 0 at ip va/pa 0x18/0x18
+(Info): *** (loadReg1PageAddr 0003) 'Reg1 = 0x18' Reg1 now 0x18
+(Info): Translating (instruction) virtual address 0x1c
+(Log):  CPU 0 Xlation Hit: page/frame 3->3
+(Info): Fetching instruction from physical address 0x1c
+(Info): Advancing time to 9
+(Info): CPU 0 executing instruction 'printreg1' for process 0 at ip va/pa 0x1c/0x1c
+(Info): *** (printreg1) 
+(Log):  [PrintReg 1]  0x18
+(Info): Quantum expired for Process x(0) at time 9 after 4 ticks.
+(Info): Dispatching Process x(0) at time 9 with quantum 4.
+(Info): Translating (instruction) virtual address 0x20
+(Log):  CPU 0 Xlation Fault: page 4
+(Info): Instruction page fault at 0x20 in process 0 (page number 4)
+(Log):  CPU 0 Xlation Hit: page/frame 4->4
+(Log):  Instruction fault for Process x(0) at ip 0x20 resolved to physical address 0x20
+(Info): Translating (instruction) virtual address 0x20
+(Log):  CPU 0 Xlation Hit: page/frame 4->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Translating (data) virtual address 0x98
+(Log):  CPU 0 Xlation Fault: page 19
+(Info): Data page fault at 0x20 in process 0 for data address 0x98 (page number 19)
+(Log):  CPU 0 Xlation Hit: page/frame 19->5
+(Log):  Data fault for Process x(0) at ip 0x20 at address 0x98 resolved to physical address 0x28.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x20
+(Log):  CPU 0 Xlation Hit: page/frame 4->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Translating (data) virtual address 0x98
+(Log):  CPU 0 Xlation Hit: page/frame 19->5
+(Info): Data physical address 0x28
+(Info): Advancing time to 10
+(Info): CPU 0 executing instruction 'storeReg0Indirect 0' for process 0 at ip va/pa 0x20/0x20
+(Info): *** (storeReg0Indirect 0) '*(pa)0x28 = Reg0' *(pa)0x28 was 0x0, now 0x0
+(Info): Translating (instruction) virtual address 0x24
+(Log):  CPU 0 Xlation Hit: page/frame 4->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Advancing time to 11
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 0 at ip va/pa 0x24/0x24
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x0, now 0x4
+(Info): Translating (instruction) virtual address 0x28
+(Log):  CPU 0 Xlation Fault: page 5
+(Info): Instruction page fault at 0x28 in process 0 (page number 5)
+(Log):  CPU 0 Xlation Hit: page/frame 5->6
+(Log):  Instruction fault for Process x(0) at ip 0x28 resolved to physical address 0x30
+(Info): Translating (instruction) virtual address 0x28
+(Log):  CPU 0 Xlation Hit: page/frame 5->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 12
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x28/0x30
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x4
+(Info): Translating (instruction) virtual address 0x2c
+(Log):  CPU 0 Xlation Hit: page/frame 5->6
+(Info): Fetching instruction from physical address 0x34
+(Info): Advancing time to 13
+(Info): CPU 0 executing instruction 'branch_eq 2' for process 0 at ip va/pa 0x2c/0x34
+(Info): *** (branch_eq 2) BranchEq Reg0=0x4 Reg1=0x18 instruction offset 0x2. New ip 0x30
+(Info): Quantum expired for Process x(0) at time 13 after 4 ticks.
+(Info): Dispatching Process x(0) at time 13 with quantum 4.
+(Info): Translating (instruction) virtual address 0x30
+(Log):  CPU 0 Xlation Fault: page 6
+(Info): Instruction page fault at 0x30 in process 0 (page number 6)
+(Log):  CPU 0 Xlation Hit: page/frame 6->7
+(Log):  Instruction fault for Process x(0) at ip 0x30 resolved to physical address 0x38
+(Info): Translating (instruction) virtual address 0x30
+(Log):  CPU 0 Xlation Hit: page/frame 6->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Advancing time to 14
+(Info): CPU 0 executing instruction 'branch_uc -4' for process 0 at ip va/pa 0x30/0x38
+(Info): *** (branch_uc -4) Branch to instruction offset 0xFFFFFFFC. IP was 0x30, now 0x20
+(Info): Translating (instruction) virtual address 0x20
+(Log):  CPU 0 Xlation Hit: page/frame 4->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Translating (data) virtual address 0x9c
+(Log):  CPU 0 Xlation Hit: page/frame 19->5
+(Info): Data physical address 0x2c
+(Info): Advancing time to 15
+(Info): CPU 0 executing instruction 'storeReg0Indirect 0' for process 0 at ip va/pa 0x20/0x20
+(Info): *** (storeReg0Indirect 0) '*(pa)0x2C = Reg0' *(pa)0x2C was 0x0, now 0x4
+(Info): Translating (instruction) virtual address 0x24
+(Log):  CPU 0 Xlation Hit: page/frame 4->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Advancing time to 16
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 0 at ip va/pa 0x24/0x24
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x4, now 0x8
+(Info): Translating (instruction) virtual address 0x28
+(Log):  CPU 0 Xlation Hit: page/frame 5->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 17
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x28/0x30
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x8
+(Info): Quantum expired for Process x(0) at time 17 after 4 ticks.
+(Info): Dispatching Process x(0) at time 17 with quantum 4.
+(Info): Translating (instruction) virtual address 0x2c
+(Log):  CPU 0 Xlation Hit: page/frame 5->6
+(Info): Fetching instruction from physical address 0x34
+(Info): Advancing time to 18
+(Info): CPU 0 executing instruction 'branch_eq 2' for process 0 at ip va/pa 0x2c/0x34
+(Info): *** (branch_eq 2) BranchEq Reg0=0x8 Reg1=0x18 instruction offset 0x2. New ip 0x30
+(Info): Translating (instruction) virtual address 0x30
+(Log):  CPU 0 Xlation Hit: page/frame 6->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Advancing time to 19
+(Info): CPU 0 executing instruction 'branch_uc -4' for process 0 at ip va/pa 0x30/0x38
+(Info): *** (branch_uc -4) Branch to instruction offset 0xFFFFFFFC. IP was 0x30, now 0x20
+(Info): Translating (instruction) virtual address 0x20
+(Log):  CPU 0 Xlation Hit: page/frame 4->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Translating (data) virtual address 0xa0
+(Log):  CPU 0 Xlation Fault: page 20
+(Info): Data page fault at 0x20 in process 0 for data address 0xa0 (page number 20)
+(Info): Swapping out frame. Token: 0 paddr: 0 page 0x0 pid 0 time 19
+(Log):  CPU 0 Xlation Hit: page/frame 20->0
+(Log):  Data fault for Process x(0) at ip 0x20 at address 0xa0 resolved to physical address 0x0.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x20
+(Log):  CPU 0 Xlation Hit: page/frame 4->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Translating (data) virtual address 0xa0
+(Log):  CPU 0 Xlation Hit: page/frame 20->0
+(Info): Data physical address 0x0
+(Info): Advancing time to 20
+(Info): CPU 0 executing instruction 'storeReg0Indirect 0' for process 0 at ip va/pa 0x20/0x20
+(Info): *** (storeReg0Indirect 0) '*(pa)0x0 = Reg0' *(pa)0x0 was 0x0, now 0x8
+(Info): Translating (instruction) virtual address 0x24
+(Log):  CPU 0 Xlation Hit: page/frame 4->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Advancing time to 21
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 0 at ip va/pa 0x24/0x24
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x8, now 0xC
+(Info): Quantum expired for Process x(0) at time 21 after 4 ticks.
+(Info): Dispatching Process x(0) at time 21 with quantum 4.
+(Info): Translating (instruction) virtual address 0x28
+(Log):  CPU 0 Xlation Hit: page/frame 5->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 22
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x28/0x30
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0xc
+(Info): Translating (instruction) virtual address 0x2c
+(Log):  CPU 0 Xlation Hit: page/frame 5->6
+(Info): Fetching instruction from physical address 0x34
+(Info): Advancing time to 23
+(Info): CPU 0 executing instruction 'branch_eq 2' for process 0 at ip va/pa 0x2c/0x34
+(Info): *** (branch_eq 2) BranchEq Reg0=0xC Reg1=0x18 instruction offset 0x2. New ip 0x30
+(Info): Translating (instruction) virtual address 0x30
+(Log):  CPU 0 Xlation Hit: page/frame 6->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Advancing time to 24
+(Info): CPU 0 executing instruction 'branch_uc -4' for process 0 at ip va/pa 0x30/0x38
+(Info): *** (branch_uc -4) Branch to instruction offset 0xFFFFFFFC. IP was 0x30, now 0x20
+(Info): Translating (instruction) virtual address 0x20
+(Log):  CPU 0 Xlation Hit: page/frame 4->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Translating (data) virtual address 0xa4
+(Log):  CPU 0 Xlation Hit: page/frame 20->0
+(Info): Data physical address 0x4
+(Info): Advancing time to 25
+(Info): CPU 0 executing instruction 'storeReg0Indirect 0' for process 0 at ip va/pa 0x20/0x20
+(Info): *** (storeReg0Indirect 0) '*(pa)0x4 = Reg0' *(pa)0x4 was 0x0, now 0xC
+(Info): Quantum expired for Process x(0) at time 25 after 4 ticks.
+(Info): Dispatching Process x(0) at time 25 with quantum 4.
+(Info): Translating (instruction) virtual address 0x24
+(Log):  CPU 0 Xlation Hit: page/frame 4->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Advancing time to 26
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 0 at ip va/pa 0x24/0x24
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0xC, now 0x10
+(Info): Translating (instruction) virtual address 0x28
+(Log):  CPU 0 Xlation Hit: page/frame 5->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 27
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x28/0x30
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x10
+(Info): Translating (instruction) virtual address 0x2c
+(Log):  CPU 0 Xlation Hit: page/frame 5->6
+(Info): Fetching instruction from physical address 0x34
+(Info): Advancing time to 28
+(Info): CPU 0 executing instruction 'branch_eq 2' for process 0 at ip va/pa 0x2c/0x34
+(Info): *** (branch_eq 2) BranchEq Reg0=0x10 Reg1=0x18 instruction offset 0x2. New ip 0x30
+(Info): Translating (instruction) virtual address 0x30
+(Log):  CPU 0 Xlation Hit: page/frame 6->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Advancing time to 29
+(Info): CPU 0 executing instruction 'branch_uc -4' for process 0 at ip va/pa 0x30/0x38
+(Info): *** (branch_uc -4) Branch to instruction offset 0xFFFFFFFC. IP was 0x30, now 0x20
+(Info): Quantum expired for Process x(0) at time 29 after 4 ticks.
+(Info): Dispatching Process x(0) at time 29 with quantum 4.
+(Info): Translating (instruction) virtual address 0x20
+(Log):  CPU 0 Xlation Hit: page/frame 4->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Translating (data) virtual address 0xa8
+(Log):  CPU 0 Xlation Fault: page 21
+(Info): Data page fault at 0x20 in process 0 for data address 0xa8 (page number 21)
+(Info): Swapping out frame. Token: 1 paddr: 8 page 0x1 pid 0 time 29
+(Log):  CPU 0 Xlation Hit: page/frame 21->1
+(Log):  Data fault for Process x(0) at ip 0x20 at address 0xa8 resolved to physical address 0x8.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x20
+(Log):  CPU 0 Xlation Hit: page/frame 4->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Translating (data) virtual address 0xa8
+(Log):  CPU 0 Xlation Hit: page/frame 21->1
+(Info): Data physical address 0x8
+(Info): Advancing time to 30
+(Info): CPU 0 executing instruction 'storeReg0Indirect 0' for process 0 at ip va/pa 0x20/0x20
+(Info): *** (storeReg0Indirect 0) '*(pa)0x8 = Reg0' *(pa)0x8 was 0x0, now 0x10
+(Info): Translating (instruction) virtual address 0x24
+(Log):  CPU 0 Xlation Hit: page/frame 4->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Advancing time to 31
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 0 at ip va/pa 0x24/0x24
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x10, now 0x14
+(Info): Translating (instruction) virtual address 0x28
+(Log):  CPU 0 Xlation Hit: page/frame 5->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 32
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x28/0x30
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x14
+(Info): Translating (instruction) virtual address 0x2c
+(Log):  CPU 0 Xlation Hit: page/frame 5->6
+(Info): Fetching instruction from physical address 0x34
+(Info): Advancing time to 33
+(Info): CPU 0 executing instruction 'branch_eq 2' for process 0 at ip va/pa 0x2c/0x34
+(Info): *** (branch_eq 2) BranchEq Reg0=0x14 Reg1=0x18 instruction offset 0x2. New ip 0x30
+(Info): Quantum expired for Process x(0) at time 33 after 4 ticks.
+(Info): Dispatching Process x(0) at time 33 with quantum 4.
+(Info): Translating (instruction) virtual address 0x30
+(Log):  CPU 0 Xlation Hit: page/frame 6->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Advancing time to 34
+(Info): CPU 0 executing instruction 'branch_uc -4' for process 0 at ip va/pa 0x30/0x38
+(Info): *** (branch_uc -4) Branch to instruction offset 0xFFFFFFFC. IP was 0x30, now 0x20
+(Info): Translating (instruction) virtual address 0x20
+(Log):  CPU 0 Xlation Hit: page/frame 4->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Translating (data) virtual address 0xac
+(Log):  CPU 0 Xlation Hit: page/frame 21->1
+(Info): Data physical address 0xc
+(Info): Advancing time to 35
+(Info): CPU 0 executing instruction 'storeReg0Indirect 0' for process 0 at ip va/pa 0x20/0x20
+(Info): *** (storeReg0Indirect 0) '*(pa)0xC = Reg0' *(pa)0xC was 0x0, now 0x14
+(Info): Translating (instruction) virtual address 0x24
+(Log):  CPU 0 Xlation Hit: page/frame 4->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Advancing time to 36
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 0 at ip va/pa 0x24/0x24
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x14, now 0x18
+(Info): Translating (instruction) virtual address 0x28
+(Log):  CPU 0 Xlation Hit: page/frame 5->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 37
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x28/0x30
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x18
+(Info): Quantum expired for Process x(0) at time 37 after 4 ticks.
+(Info): Dispatching Process x(0) at time 37 with quantum 4.
+(Info): Translating (instruction) virtual address 0x2c
+(Log):  CPU 0 Xlation Hit: page/frame 5->6
+(Info): Fetching instruction from physical address 0x34
+(Info): Advancing time to 38
+(Info): CPU 0 executing instruction 'branch_eq 2' for process 0 at ip va/pa 0x2c/0x34
+(Info): *** (branch_eq 2) BranchEq Reg0=0x18 Reg1=0x18 instruction offset 0x2. New ip 0x34
+(Info): Translating (instruction) virtual address 0x34
+(Log):  CPU 0 Xlation Hit: page/frame 6->7
+(Info): Fetching instruction from physical address 0x3c
+(Info): Advancing time to 39
+(Info): CPU 0 executing instruction 'loadReg0PageAddr 0' for process 0 at ip va/pa 0x34/0x3c
+(Info): *** (loadReg0PageAddr 0) 'Reg0 = 0x0' Reg0 now 0x0
+(Info): Translating (instruction) virtual address 0x38
+(Log):  CPU 0 Xlation Fault: page 7
+(Info): Instruction page fault at 0x38 in process 0 (page number 7)
+(Info): Swapping out frame. Token: 2 paddr: 10 page 0x2 pid 0 time 39
+(Log):  CPU 0 Xlation Hit: page/frame 7->2
+(Log):  Instruction fault for Process x(0) at ip 0x38 resolved to physical address 0x10
+(Info): Translating (instruction) virtual address 0x38
+(Log):  CPU 0 Xlation Hit: page/frame 7->2
+(Info): Fetching instruction from physical address 0x10
+(Info): Advancing time to 40
+(Info): Starting Process y(1) at time 40.
+(Info): CPU 0 executing instruction 'loadReg1PageAddr 0' for process 0 at ip va/pa 0x38/0x10
+(Info): *** (loadReg1PageAddr 0) 'Reg1 = 0x0' Reg1 now 0x0
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Hit: page/frame 7->2
+(Info): Fetching instruction from physical address 0x14
+(Info): Translating (data) virtual address 0x98
+(Log):  CPU 0 Xlation Hit: page/frame 19->5
+(Info): Data physical address 0x28
+(Info): Advancing time to 41
+(Info): CPU 0 executing instruction 'loadReg0Indirect 0' for process 0 at ip va/pa 0x3c/0x14
+(Info): *** (loadReg0Indirect 0) 'Reg0 = *(pa)0x28' Reg0 was 0x0, now 0x0
+(Info): Quantum expired for Process x(0) at time 41 after 4 ticks.
+(Info): Dispatching Process y(1) at time 41 with quantum 4.
+(Info): Translating (instruction) virtual address 0x0
+(Log):  CPU 0 Xlation Fault: page 0
+(Info): Instruction page fault at 0x0 in process 1 (page number 0)
+(Info): Swapping out frame. Token: 3 paddr: 18 page 0x3 pid 0 time 41
+(Log):  CPU 0 Xlation Hit: page/frame 0->3
+(Log):  Instruction fault for Process y(1) at ip 0x0 resolved to physical address 0x18
+(Info): Translating (instruction) virtual address 0x0
+(Log):  CPU 0 Xlation Hit: page/frame 0->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Advancing time to 42
+(Info): CPU 0 executing instruction 'loadReg0Immediate 0' for process 1 at ip va/pa 0x0/0x18
+(Info): *** (loadReg0Immediate 0) 'Reg0 = 0x0' Reg0 now 0x0
+(Info): Translating (instruction) virtual address 0x4
+(Log):  CPU 0 Xlation Hit: page/frame 0->3
+(Info): Fetching instruction from physical address 0x1c
+(Info): Advancing time to 43
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x4/0x1c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x0
+(Info): Translating (instruction) virtual address 0x8
+(Log):  CPU 0 Xlation Fault: page 1
+(Info): Instruction page fault at 0x8 in process 1 (page number 1)
+(Info): Swapping out frame. Token: 4 paddr: 0 page 0x14 pid 0 time 43
+(Log):  CPU 0 Xlation Hit: page/frame 1->0
+(Log):  Instruction fault for Process y(1) at ip 0x8 resolved to physical address 0x0
+(Info): Translating (instruction) virtual address 0x8
+(Log):  CPU 0 Xlation Hit: page/frame 1->0
+(Info): Fetching instruction from physical address 0x0
+(Info): Advancing time to 44
+(Info): CPU 0 executing instruction 'loadReg1Immediate 0003' for process 1 at ip va/pa 0x8/0x0
+(Info): *** (loadReg1Immediate 0003) 'Reg1 = 0x3' Reg1 now 0x3
+(Info): Translating (instruction) virtual address 0xc
+(Log):  CPU 0 Xlation Hit: page/frame 1->0
+(Info): Fetching instruction from physical address 0x4
+(Info): Advancing time to 45
+(Info): CPU 0 executing instruction 'printreg1' for process 1 at ip va/pa 0xc/0x4
+(Info): *** (printreg1) 
+(Log):  [PrintReg 1]  0x3
+(Info): Quantum expired for Process y(1) at time 45 after 4 ticks.
+(Info): Dispatching Process x(0) at time 45 with quantum 4.
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Fault: page 8
+(Info): Instruction page fault at 0x40 in process 0 (page number 8)
+(Info): Swapping out frame. Token: 5 paddr: 8 page 0x15 pid 0 time 45
+(Log):  CPU 0 Xlation Hit: page/frame 8->1
+(Log):  Instruction fault for Process x(0) at ip 0x40 resolved to physical address 0x8
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Hit: page/frame 8->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Advancing time to 46
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x40/0x8
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x0
+(Info): Translating (instruction) virtual address 0x44
+(Log):  CPU 0 Xlation Hit: page/frame 8->1
+(Info): Fetching instruction from physical address 0xc
+(Info): Advancing time to 47
+(Info): CPU 0 executing instruction 'branch_eq 5' for process 0 at ip va/pa 0x44/0xc
+(Info): *** (branch_eq 5) BranchEq Reg0=0x0 Reg1=0x0 instruction offset 0x5. New ip 0x58
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Fault: page 11
+(Info): Instruction page fault at 0x58 in process 0 (page number 11)
+(Info): Swapping out frame. Token: 6 paddr: 20 page 0x4 pid 0 time 47
+(Log):  CPU 0 Xlation Hit: page/frame 11->4
+(Log):  Instruction fault for Process x(0) at ip 0x58 resolved to physical address 0x20
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Hit: page/frame 11->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Advancing time to 48
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 0 at ip va/pa 0x58/0x20
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x0, now 0x4
+(Info): Translating (instruction) virtual address 0x5c
+(Log):  CPU 0 Xlation Hit: page/frame 11->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Advancing time to 49
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x5c/0x24
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x4
+(Info): Quantum expired for Process x(0) at time 49 after 4 ticks.
+(Info): Dispatching Process y(1) at time 49 with quantum 4.
+(Info): Translating (instruction) virtual address 0x10
+(Log):  CPU 0 Xlation Fault: page 2
+(Info): Instruction page fault at 0x10 in process 1 (page number 2)
+(Info): Swapping out frame. Token: 7 paddr: 30 page 0x5 pid 0 time 49
+(Log):  CPU 0 Xlation Hit: page/frame 2->6
+(Log):  Instruction fault for Process y(1) at ip 0x10 resolved to physical address 0x30
+(Info): Translating (instruction) virtual address 0x10
+(Log):  CPU 0 Xlation Hit: page/frame 2->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 50
+(Info): CPU 0 executing instruction 'Syscall_Alloc' for process 1 at ip va/pa 0x10/0x30
+(Info): *** (Syscall_Alloc) SyscallAlloc start page 0x0 for 0x3 pages
+(Info): Translating (instruction) virtual address 0x14
+(Log):  CPU 0 Xlation Hit: page/frame 2->6
+(Info): Fetching instruction from physical address 0x34
+(Info): Advancing time to 51
+(Info): CPU 0 executing instruction 'loadReg0PageAddr 0' for process 1 at ip va/pa 0x14/0x34
+(Info): *** (loadReg0PageAddr 0) 'Reg0 = 0x0' Reg0 now 0x0
+(Info): Translating (instruction) virtual address 0x18
+(Log):  CPU 0 Xlation Fault: page 3
+(Info): Instruction page fault at 0x18 in process 1 (page number 3)
+(Info): Swapping out frame. Token: 8 paddr: 38 page 0x6 pid 0 time 51
+(Log):  CPU 0 Xlation Hit: page/frame 3->7
+(Log):  Instruction fault for Process y(1) at ip 0x18 resolved to physical address 0x38
+(Info): Translating (instruction) virtual address 0x18
+(Log):  CPU 0 Xlation Hit: page/frame 3->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Advancing time to 52
+(Info): CPU 0 executing instruction 'loadReg1PageAddr 0003' for process 1 at ip va/pa 0x18/0x38
+(Info): *** (loadReg1PageAddr 0003) 'Reg1 = 0x18' Reg1 now 0x18
+(Info): Translating (instruction) virtual address 0x1c
+(Log):  CPU 0 Xlation Hit: page/frame 3->7
+(Info): Fetching instruction from physical address 0x3c
+(Info): Advancing time to 53
+(Info): CPU 0 executing instruction 'printreg1' for process 1 at ip va/pa 0x1c/0x3c
+(Info): *** (printreg1) 
+(Log):  [PrintReg 1]  0x18
+(Info): Quantum expired for Process y(1) at time 53 after 4 ticks.
+(Info): Dispatching Process x(0) at time 53 with quantum 4.
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Fault: page 12
+(Info): Instruction page fault at 0x60 in process 0 (page number 12)
+(Info): Swapping out frame. Token: 9 paddr: 10 page 0x7 pid 0 time 53
+(Log):  CPU 0 Xlation Hit: page/frame 12->2
+(Log):  Instruction fault for Process x(0) at ip 0x60 resolved to physical address 0x10
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Hit: page/frame 12->2
+(Info): Fetching instruction from physical address 0x10
+(Info): Advancing time to 54
+(Info): CPU 0 executing instruction 'loadReg1PageAddr 0003' for process 0 at ip va/pa 0x60/0x10
+(Info): *** (loadReg1PageAddr 0003) 'Reg1 = 0x18' Reg1 now 0x18
+(Info): Translating (instruction) virtual address 0x64
+(Log):  CPU 0 Xlation Hit: page/frame 12->2
+(Info): Fetching instruction from physical address 0x14
+(Info): Advancing time to 55
+(Info): CPU 0 executing instruction 'branch_eq 10' for process 0 at ip va/pa 0x64/0x14
+(Info): *** (branch_eq 10) BranchEq Reg0=0x4 Reg1=0x18 instruction offset 0xA. New ip 0x68
+(Info): Translating (instruction) virtual address 0x68
+(Log):  CPU 0 Xlation Fault: page 13
+(Info): Instruction page fault at 0x68 in process 0 (page number 13)
+(Info): Swapping out frame. Token: 10 paddr: 28 page 0x13 pid 0 time 55
+(Log):  CPU 0 Xlation Hit: page/frame 13->5
+(Log):  Instruction fault for Process x(0) at ip 0x68 resolved to physical address 0x28
+(Info): Translating (instruction) virtual address 0x68
+(Log):  CPU 0 Xlation Hit: page/frame 13->5
+(Info): Fetching instruction from physical address 0x28
+(Info): Advancing time to 56
+(Info): CPU 0 executing instruction 'incrReg0 -4' for process 0 at ip va/pa 0x68/0x28
+(Info): *** (incrReg0 -4) 'Reg0 += 0xFFFFFFFC' Reg0 was 0x4, now 0x0
+(Info): Translating (instruction) virtual address 0x6c
+(Log):  CPU 0 Xlation Hit: page/frame 13->5
+(Info): Fetching instruction from physical address 0x2c
+(Info): Advancing time to 57
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x6c/0x2c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x0
+(Info): Quantum expired for Process x(0) at time 57 after 4 ticks.
+(Info): Dispatching Process y(1) at time 57 with quantum 4.
+(Info): Translating (instruction) virtual address 0x20
+(Log):  CPU 0 Xlation Fault: page 4
+(Info): Instruction page fault at 0x20 in process 1 (page number 4)
+(Info): Swapping out frame. Token: 11 paddr: 18 page 0x0 pid 1 time 57
+(Log):  CPU 0 Xlation Hit: page/frame 4->3
+(Log):  Instruction fault for Process y(1) at ip 0x20 resolved to physical address 0x18
+(Info): Translating (instruction) virtual address 0x20
+(Log):  CPU 0 Xlation Hit: page/frame 4->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Translating (data) virtual address 0x98
+(Log):  CPU 0 Xlation Fault: page 19
+(Info): Data page fault at 0x20 in process 1 for data address 0x98 (page number 19)
+(Info): Swapping out frame. Token: 12 paddr: 0 page 0x1 pid 1 time 57
+(Log):  CPU 0 Xlation Hit: page/frame 19->0
+(Log):  Data fault for Process y(1) at ip 0x20 at address 0x98 resolved to physical address 0x0.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x20
+(Log):  CPU 0 Xlation Hit: page/frame 4->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Translating (data) virtual address 0x98
+(Log):  CPU 0 Xlation Hit: page/frame 19->0
+(Info): Data physical address 0x0
+(Info): Advancing time to 58
+(Info): CPU 0 executing instruction 'storeReg0Indirect 0' for process 1 at ip va/pa 0x20/0x18
+(Info): *** (storeReg0Indirect 0) '*(pa)0x0 = Reg0' *(pa)0x0 was 0x0, now 0x0
+(Info): Translating (instruction) virtual address 0x24
+(Log):  CPU 0 Xlation Hit: page/frame 4->3
+(Info): Fetching instruction from physical address 0x1c
+(Info): Advancing time to 59
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 1 at ip va/pa 0x24/0x1c
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x0, now 0x4
+(Info): Translating (instruction) virtual address 0x28
+(Log):  CPU 0 Xlation Fault: page 5
+(Info): Instruction page fault at 0x28 in process 1 (page number 5)
+(Info): Swapping out frame. Token: 13 paddr: 8 page 0x8 pid 0 time 59
+(Log):  CPU 0 Xlation Hit: page/frame 5->1
+(Log):  Instruction fault for Process y(1) at ip 0x28 resolved to physical address 0x8
+(Info): Translating (instruction) virtual address 0x28
+(Log):  CPU 0 Xlation Hit: page/frame 5->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Advancing time to 60
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x28/0x8
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x4
+(Info): Translating (instruction) virtual address 0x2c
+(Log):  CPU 0 Xlation Hit: page/frame 5->1
+(Info): Fetching instruction from physical address 0xc
+(Info): Advancing time to 61
+(Info): CPU 0 executing instruction 'branch_eq 2' for process 1 at ip va/pa 0x2c/0xc
+(Info): *** (branch_eq 2) BranchEq Reg0=0x4 Reg1=0x18 instruction offset 0x2. New ip 0x30
+(Info): Quantum expired for Process y(1) at time 61 after 4 ticks.
+(Info): Dispatching Process x(0) at time 61 with quantum 4.
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Fault: page 14
+(Info): Instruction page fault at 0x70 in process 0 (page number 14)
+(Info): Swapping out frame. Token: 14 paddr: 20 page 0xb pid 0 time 61
+(Log):  CPU 0 Xlation Hit: page/frame 14->4
+(Log):  Instruction fault for Process x(0) at ip 0x70 resolved to physical address 0x20
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Hit: page/frame 14->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Translating (data) virtual address 0x98
+(Log):  CPU 0 Xlation Fault: page 19
+(Info): Data page fault at 0x70 in process 0 for data address 0x98 (page number 19)
+(Info): Swapping out frame. Token: 15 paddr: 30 page 0x2 pid 1 time 61
+(Info): Swapping in frame from info: Token: 10 paddr: 28 page 0x13 pid 0 time 55 target paddr: 30 page 0x13 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 19->6
+(Log):  Data fault for Process x(0) at ip 0x70 at address 0x98 resolved to physical address 0x30.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Hit: page/frame 14->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Translating (data) virtual address 0x98
+(Log):  CPU 0 Xlation Hit: page/frame 19->6
+(Info): Data physical address 0x30
+(Info): Advancing time to 62
+(Info): CPU 0 executing instruction 'loadReg1Indirect 0' for process 0 at ip va/pa 0x70/0x20
+(Info): *** (loadReg1Indirect 0) 'Reg1 = *(pa)0x30' Reg1 was 0x18, now 0x0
+(Info): Translating (instruction) virtual address 0x74
+(Log):  CPU 0 Xlation Hit: page/frame 14->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Advancing time to 63
+(Info): CPU 0 executing instruction 'printreg1' for process 0 at ip va/pa 0x74/0x24
+(Info): *** (printreg1) 
+(Log):  [PrintReg 1]  0x0
+(Info): Translating (instruction) virtual address 0x78
+(Log):  CPU 0 Xlation Fault: page 15
+(Info): Instruction page fault at 0x78 in process 0 (page number 15)
+(Info): Swapping out frame. Token: 16 paddr: 38 page 0x3 pid 1 time 63
+(Log):  CPU 0 Xlation Hit: page/frame 15->7
+(Log):  Instruction fault for Process x(0) at ip 0x78 resolved to physical address 0x38
+(Info): Translating (instruction) virtual address 0x78
+(Log):  CPU 0 Xlation Hit: page/frame 15->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Advancing time to 64
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 0 at ip va/pa 0x78/0x38
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x0, now 0x4
+(Info): Translating (instruction) virtual address 0x7c
+(Log):  CPU 0 Xlation Hit: page/frame 15->7
+(Info): Fetching instruction from physical address 0x3c
+(Info): Advancing time to 65
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x7c/0x3c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x4
+(Info): Quantum expired for Process x(0) at time 65 after 4 ticks.
+(Info): Dispatching Process y(1) at time 65 with quantum 4.
+(Info): Translating (instruction) virtual address 0x30
+(Log):  CPU 0 Xlation Fault: page 6
+(Info): Instruction page fault at 0x30 in process 1 (page number 6)
+(Info): Swapping out frame. Token: 17 paddr: 10 page 0xc pid 0 time 65
+(Log):  CPU 0 Xlation Hit: page/frame 6->2
+(Log):  Instruction fault for Process y(1) at ip 0x30 resolved to physical address 0x10
+(Info): Translating (instruction) virtual address 0x30
+(Log):  CPU 0 Xlation Hit: page/frame 6->2
+(Info): Fetching instruction from physical address 0x10
+(Info): Advancing time to 66
+(Info): CPU 0 executing instruction 'branch_uc -4' for process 1 at ip va/pa 0x30/0x10
+(Info): *** (branch_uc -4) Branch to instruction offset 0xFFFFFFFC. IP was 0x30, now 0x20
+(Info): Translating (instruction) virtual address 0x20
+(Log):  CPU 0 Xlation Hit: page/frame 4->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Translating (data) virtual address 0x9c
+(Log):  CPU 0 Xlation Hit: page/frame 19->0
+(Info): Data physical address 0x4
+(Info): Advancing time to 67
+(Info): CPU 0 executing instruction 'storeReg0Indirect 0' for process 1 at ip va/pa 0x20/0x18
+(Info): *** (storeReg0Indirect 0) '*(pa)0x4 = Reg0' *(pa)0x4 was 0x0, now 0x4
+(Info): Translating (instruction) virtual address 0x24
+(Log):  CPU 0 Xlation Hit: page/frame 4->3
+(Info): Fetching instruction from physical address 0x1c
+(Info): Advancing time to 68
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 1 at ip va/pa 0x24/0x1c
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x4, now 0x8
+(Info): Translating (instruction) virtual address 0x28
+(Log):  CPU 0 Xlation Hit: page/frame 5->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Advancing time to 69
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x28/0x8
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x8
+(Info): Quantum expired for Process y(1) at time 69 after 4 ticks.
+(Info): Dispatching Process x(0) at time 69 with quantum 4.
+(Info): Translating (instruction) virtual address 0x80
+(Log):  CPU 0 Xlation Fault: page 16
+(Info): Instruction page fault at 0x80 in process 0 (page number 16)
+(Info): Swapping out frame. Token: 18 paddr: 28 page 0xd pid 0 time 69
+(Log):  CPU 0 Xlation Hit: page/frame 16->5
+(Log):  Instruction fault for Process x(0) at ip 0x80 resolved to physical address 0x28
+(Info): Translating (instruction) virtual address 0x80
+(Log):  CPU 0 Xlation Hit: page/frame 16->5
+(Info): Fetching instruction from physical address 0x28
+(Info): Advancing time to 70
+(Info): CPU 0 executing instruction 'incrReg1 4' for process 0 at ip va/pa 0x80/0x28
+(Info): *** (incrReg1 4) 'Reg1 += 0x4' Reg1 was 0x0, now 0x4
+(Info): Translating (instruction) virtual address 0x84
+(Log):  CPU 0 Xlation Hit: page/frame 16->5
+(Info): Fetching instruction from physical address 0x2c
+(Info): Advancing time to 71
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x84/0x2c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x4
+(Info): Translating (instruction) virtual address 0x88
+(Log):  CPU 0 Xlation Fault: page 17
+(Info): Instruction page fault at 0x88 in process 0 (page number 17)
+(Info): Swapping out frame. Token: 19 paddr: 30 page 0x13 pid 0 time 71
+(Log):  CPU 0 Xlation Hit: page/frame 17->6
+(Log):  Instruction fault for Process x(0) at ip 0x88 resolved to physical address 0x30
+(Info): Translating (instruction) virtual address 0x88
+(Log):  CPU 0 Xlation Hit: page/frame 17->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 72
+(Info): CPU 0 executing instruction 'branch_uc -19' for process 0 at ip va/pa 0x88/0x30
+(Info): *** (branch_uc -19) Branch to instruction offset 0xFFFFFFED. IP was 0x88, now 0x3C
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Fault: page 7
+(Info): Instruction page fault at 0x3c in process 0 (page number 7)
+(Info): Swapping out frame. Token: 20 paddr: 20 page 0xe pid 0 time 72
+(Info): Swapping in frame from info: Token: 9 paddr: 10 page 0x7 pid 0 time 53 target paddr: 20 page 0x7 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 7->4
+(Log):  Instruction fault for Process x(0) at ip 0x3c resolved to physical address 0x24
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Hit: page/frame 7->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Translating (data) virtual address 0x9c
+(Log):  CPU 0 Xlation Fault: page 19
+(Info): Data page fault at 0x3c in process 0 for data address 0x9c (page number 19)
+(Info): Swapping out frame. Token: 21 paddr: 38 page 0xf pid 0 time 72
+(Info): Swapping in frame from info: Token: 19 paddr: 30 page 0x13 pid 0 time 71 target paddr: 38 page 0x13 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 19->7
+(Log):  Data fault for Process x(0) at ip 0x3c at address 0x9c resolved to physical address 0x3c.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Hit: page/frame 7->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Translating (data) virtual address 0x9c
+(Log):  CPU 0 Xlation Hit: page/frame 19->7
+(Info): Data physical address 0x3c
+(Info): Advancing time to 73
+(Info): CPU 0 executing instruction 'loadReg0Indirect 0' for process 0 at ip va/pa 0x3c/0x24
+(Info): *** (loadReg0Indirect 0) 'Reg0 = *(pa)0x3C' Reg0 was 0x4, now 0x4
+(Info): Quantum expired for Process x(0) at time 73 after 4 ticks.
+(Info): Dispatching Process y(1) at time 73 with quantum 4.
+(Info): Translating (instruction) virtual address 0x2c
+(Log):  CPU 0 Xlation Hit: page/frame 5->1
+(Info): Fetching instruction from physical address 0xc
+(Info): Advancing time to 74
+(Info): CPU 0 executing instruction 'branch_eq 2' for process 1 at ip va/pa 0x2c/0xc
+(Info): *** (branch_eq 2) BranchEq Reg0=0x8 Reg1=0x18 instruction offset 0x2. New ip 0x30
+(Info): Translating (instruction) virtual address 0x30
+(Log):  CPU 0 Xlation Hit: page/frame 6->2
+(Info): Fetching instruction from physical address 0x10
+(Info): Advancing time to 75
+(Info): CPU 0 executing instruction 'branch_uc -4' for process 1 at ip va/pa 0x30/0x10
+(Info): *** (branch_uc -4) Branch to instruction offset 0xFFFFFFFC. IP was 0x30, now 0x20
+(Info): Translating (instruction) virtual address 0x20
+(Log):  CPU 0 Xlation Hit: page/frame 4->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Translating (data) virtual address 0xa0
+(Log):  CPU 0 Xlation Fault: page 20
+(Info): Data page fault at 0x20 in process 1 for data address 0xa0 (page number 20)
+(Info): Swapping out frame. Token: 22 paddr: 0 page 0x13 pid 1 time 75
+(Log):  CPU 0 Xlation Hit: page/frame 20->0
+(Log):  Data fault for Process y(1) at ip 0x20 at address 0xa0 resolved to physical address 0x0.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x20
+(Log):  CPU 0 Xlation Hit: page/frame 4->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Translating (data) virtual address 0xa0
+(Log):  CPU 0 Xlation Hit: page/frame 20->0
+(Info): Data physical address 0x0
+(Info): Advancing time to 76
+(Info): CPU 0 executing instruction 'storeReg0Indirect 0' for process 1 at ip va/pa 0x20/0x18
+(Info): *** (storeReg0Indirect 0) '*(pa)0x0 = Reg0' *(pa)0x0 was 0x0, now 0x8
+(Info): Translating (instruction) virtual address 0x24
+(Log):  CPU 0 Xlation Hit: page/frame 4->3
+(Info): Fetching instruction from physical address 0x1c
+(Info): Advancing time to 77
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 1 at ip va/pa 0x24/0x1c
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x8, now 0xC
+(Info): Quantum expired for Process y(1) at time 77 after 4 ticks.
+(Info): Dispatching Process x(0) at time 77 with quantum 4.
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Fault: page 8
+(Info): Instruction page fault at 0x40 in process 0 (page number 8)
+(Info): Swapping out frame. Token: 23 paddr: 28 page 0x10 pid 0 time 77
+(Info): Swapping in frame from info: Token: 13 paddr: 8 page 0x8 pid 0 time 59 target paddr: 28 page 0x8 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 8->5
+(Log):  Instruction fault for Process x(0) at ip 0x40 resolved to physical address 0x28
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Hit: page/frame 8->5
+(Info): Fetching instruction from physical address 0x28
+(Info): Advancing time to 78
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x40/0x28
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x4
+(Info): Translating (instruction) virtual address 0x44
+(Log):  CPU 0 Xlation Hit: page/frame 8->5
+(Info): Fetching instruction from physical address 0x2c
+(Info): Advancing time to 79
+(Info): CPU 0 executing instruction 'branch_eq 5' for process 0 at ip va/pa 0x44/0x2c
+(Info): *** (branch_eq 5) BranchEq Reg0=0x4 Reg1=0x4 instruction offset 0x5. New ip 0x58
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Fault: page 11
+(Info): Instruction page fault at 0x58 in process 0 (page number 11)
+(Info): Swapping out frame. Token: 24 paddr: 30 page 0x11 pid 0 time 79
+(Info): Swapping in frame from info: Token: 14 paddr: 20 page 0xb pid 0 time 61 target paddr: 30 page 0xb pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 11->6
+(Log):  Instruction fault for Process x(0) at ip 0x58 resolved to physical address 0x30
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Hit: page/frame 11->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 80
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 0 at ip va/pa 0x58/0x30
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x4, now 0x8
+(Info): Translating (instruction) virtual address 0x5c
+(Log):  CPU 0 Xlation Hit: page/frame 11->6
+(Info): Fetching instruction from physical address 0x34
+(Info): Advancing time to 81
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x5c/0x34
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x8
+(Info): Quantum expired for Process x(0) at time 81 after 4 ticks.
+(Info): Dispatching Process y(1) at time 81 with quantum 4.
+(Info): Translating (instruction) virtual address 0x28
+(Log):  CPU 0 Xlation Hit: page/frame 5->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Advancing time to 82
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x28/0x8
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0xc
+(Info): Translating (instruction) virtual address 0x2c
+(Log):  CPU 0 Xlation Hit: page/frame 5->1
+(Info): Fetching instruction from physical address 0xc
+(Info): Advancing time to 83
+(Info): CPU 0 executing instruction 'branch_eq 2' for process 1 at ip va/pa 0x2c/0xc
+(Info): *** (branch_eq 2) BranchEq Reg0=0xC Reg1=0x18 instruction offset 0x2. New ip 0x30
+(Info): Translating (instruction) virtual address 0x30
+(Log):  CPU 0 Xlation Hit: page/frame 6->2
+(Info): Fetching instruction from physical address 0x10
+(Info): Advancing time to 84
+(Info): CPU 0 executing instruction 'branch_uc -4' for process 1 at ip va/pa 0x30/0x10
+(Info): *** (branch_uc -4) Branch to instruction offset 0xFFFFFFFC. IP was 0x30, now 0x20
+(Info): Translating (instruction) virtual address 0x20
+(Log):  CPU 0 Xlation Hit: page/frame 4->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Translating (data) virtual address 0xa4
+(Log):  CPU 0 Xlation Hit: page/frame 20->0
+(Info): Data physical address 0x4
+(Info): Advancing time to 85
+(Info): CPU 0 executing instruction 'storeReg0Indirect 0' for process 1 at ip va/pa 0x20/0x18
+(Info): *** (storeReg0Indirect 0) '*(pa)0x4 = Reg0' *(pa)0x4 was 0x0, now 0xC
+(Info): Quantum expired for Process y(1) at time 85 after 4 ticks.
+(Info): Dispatching Process x(0) at time 85 with quantum 4.
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Fault: page 12
+(Info): Instruction page fault at 0x60 in process 0 (page number 12)
+(Info): Swapping out frame. Token: 25 paddr: 20 page 0x7 pid 0 time 85
+(Info): Swapping in frame from info: Token: 17 paddr: 10 page 0xc pid 0 time 65 target paddr: 20 page 0xc pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 12->4
+(Log):  Instruction fault for Process x(0) at ip 0x60 resolved to physical address 0x20
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Hit: page/frame 12->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Advancing time to 86
+(Info): CPU 0 executing instruction 'loadReg1PageAddr 0003' for process 0 at ip va/pa 0x60/0x20
+(Info): *** (loadReg1PageAddr 0003) 'Reg1 = 0x18' Reg1 now 0x18
+(Info): Translating (instruction) virtual address 0x64
+(Log):  CPU 0 Xlation Hit: page/frame 12->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Advancing time to 87
+(Info): CPU 0 executing instruction 'branch_eq 10' for process 0 at ip va/pa 0x64/0x24
+(Info): *** (branch_eq 10) BranchEq Reg0=0x8 Reg1=0x18 instruction offset 0xA. New ip 0x68
+(Info): Translating (instruction) virtual address 0x68
+(Log):  CPU 0 Xlation Fault: page 13
+(Info): Instruction page fault at 0x68 in process 0 (page number 13)
+(Info): Swapping out frame. Token: 26 paddr: 38 page 0x13 pid 0 time 87
+(Info): Swapping in frame from info: Token: 18 paddr: 28 page 0xd pid 0 time 69 target paddr: 38 page 0xd pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 13->7
+(Log):  Instruction fault for Process x(0) at ip 0x68 resolved to physical address 0x38
+(Info): Translating (instruction) virtual address 0x68
+(Log):  CPU 0 Xlation Hit: page/frame 13->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Advancing time to 88
+(Info): CPU 0 executing instruction 'incrReg0 -4' for process 0 at ip va/pa 0x68/0x38
+(Info): *** (incrReg0 -4) 'Reg0 += 0xFFFFFFFC' Reg0 was 0x8, now 0x4
+(Info): Translating (instruction) virtual address 0x6c
+(Log):  CPU 0 Xlation Hit: page/frame 13->7
+(Info): Fetching instruction from physical address 0x3c
+(Info): Advancing time to 89
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x6c/0x3c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x4
+(Info): Quantum expired for Process x(0) at time 89 after 4 ticks.
+(Info): Dispatching Process y(1) at time 89 with quantum 4.
+(Info): Translating (instruction) virtual address 0x24
+(Log):  CPU 0 Xlation Hit: page/frame 4->3
+(Info): Fetching instruction from physical address 0x1c
+(Info): Advancing time to 90
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 1 at ip va/pa 0x24/0x1c
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0xC, now 0x10
+(Info): Translating (instruction) virtual address 0x28
+(Log):  CPU 0 Xlation Hit: page/frame 5->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Advancing time to 91
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x28/0x8
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x10
+(Info): Translating (instruction) virtual address 0x2c
+(Log):  CPU 0 Xlation Hit: page/frame 5->1
+(Info): Fetching instruction from physical address 0xc
+(Info): Advancing time to 92
+(Info): CPU 0 executing instruction 'branch_eq 2' for process 1 at ip va/pa 0x2c/0xc
+(Info): *** (branch_eq 2) BranchEq Reg0=0x10 Reg1=0x18 instruction offset 0x2. New ip 0x30
+(Info): Translating (instruction) virtual address 0x30
+(Log):  CPU 0 Xlation Hit: page/frame 6->2
+(Info): Fetching instruction from physical address 0x10
+(Info): Advancing time to 93
+(Info): CPU 0 executing instruction 'branch_uc -4' for process 1 at ip va/pa 0x30/0x10
+(Info): *** (branch_uc -4) Branch to instruction offset 0xFFFFFFFC. IP was 0x30, now 0x20
+(Info): Quantum expired for Process y(1) at time 93 after 4 ticks.
+(Info): Dispatching Process x(0) at time 93 with quantum 4.
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Fault: page 14
+(Info): Instruction page fault at 0x70 in process 0 (page number 14)
+(Info): Swapping out frame. Token: 27 paddr: 28 page 0x8 pid 0 time 93
+(Info): Swapping in frame from info: Token: 20 paddr: 20 page 0xe pid 0 time 72 target paddr: 28 page 0xe pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 14->5
+(Log):  Instruction fault for Process x(0) at ip 0x70 resolved to physical address 0x28
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Hit: page/frame 14->5
+(Info): Fetching instruction from physical address 0x28
+(Info): Translating (data) virtual address 0x9c
+(Log):  CPU 0 Xlation Fault: page 19
+(Info): Data page fault at 0x70 in process 0 for data address 0x9c (page number 19)
+(Info): Swapping out frame. Token: 28 paddr: 30 page 0xb pid 0 time 93
+(Info): Swapping in frame from info: Token: 26 paddr: 38 page 0x13 pid 0 time 87 target paddr: 30 page 0x13 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 19->6
+(Log):  Data fault for Process x(0) at ip 0x70 at address 0x9c resolved to physical address 0x34.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Hit: page/frame 14->5
+(Info): Fetching instruction from physical address 0x28
+(Info): Translating (data) virtual address 0x9c
+(Log):  CPU 0 Xlation Hit: page/frame 19->6
+(Info): Data physical address 0x34
+(Info): Advancing time to 94
+(Info): CPU 0 executing instruction 'loadReg1Indirect 0' for process 0 at ip va/pa 0x70/0x28
+(Info): *** (loadReg1Indirect 0) 'Reg1 = *(pa)0x34' Reg1 was 0x18, now 0x4
+(Info): Translating (instruction) virtual address 0x74
+(Log):  CPU 0 Xlation Hit: page/frame 14->5
+(Info): Fetching instruction from physical address 0x2c
+(Info): Advancing time to 95
+(Info): CPU 0 executing instruction 'printreg1' for process 0 at ip va/pa 0x74/0x2c
+(Info): *** (printreg1) 
+(Log):  [PrintReg 1]  0x4
+(Info): Translating (instruction) virtual address 0x78
+(Log):  CPU 0 Xlation Fault: page 15
+(Info): Instruction page fault at 0x78 in process 0 (page number 15)
+(Info): Swapping out frame. Token: 29 paddr: 0 page 0x14 pid 1 time 95
+(Info): Swapping in frame from info: Token: 21 paddr: 38 page 0xf pid 0 time 72 target paddr: 0 page 0xf pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 15->0
+(Log):  Instruction fault for Process x(0) at ip 0x78 resolved to physical address 0x0
+(Info): Translating (instruction) virtual address 0x78
+(Log):  CPU 0 Xlation Hit: page/frame 15->0
+(Info): Fetching instruction from physical address 0x0
+(Info): Advancing time to 96
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 0 at ip va/pa 0x78/0x0
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x4, now 0x8
+(Info): Translating (instruction) virtual address 0x7c
+(Log):  CPU 0 Xlation Hit: page/frame 15->0
+(Info): Fetching instruction from physical address 0x4
+(Info): Advancing time to 97
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x7c/0x4
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x8
+(Info): Quantum expired for Process x(0) at time 97 after 4 ticks.
+(Info): Dispatching Process y(1) at time 97 with quantum 4.
+(Info): Translating (instruction) virtual address 0x20
+(Log):  CPU 0 Xlation Hit: page/frame 4->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Translating (data) virtual address 0xa8
+(Log):  CPU 0 Xlation Fault: page 21
+(Info): Data page fault at 0x20 in process 1 for data address 0xa8 (page number 21)
+(Info): Swapping out frame. Token: 30 paddr: 20 page 0xc pid 0 time 97
+(Log):  CPU 0 Xlation Hit: page/frame 21->4
+(Log):  Data fault for Process y(1) at ip 0x20 at address 0xa8 resolved to physical address 0x20.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x20
+(Log):  CPU 0 Xlation Hit: page/frame 4->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Translating (data) virtual address 0xa8
+(Log):  CPU 0 Xlation Hit: page/frame 21->4
+(Info): Data physical address 0x20
+(Info): Advancing time to 98
+(Info): CPU 0 executing instruction 'storeReg0Indirect 0' for process 1 at ip va/pa 0x20/0x18
+(Info): *** (storeReg0Indirect 0) '*(pa)0x20 = Reg0' *(pa)0x20 was 0x0, now 0x10
+(Info): Translating (instruction) virtual address 0x24
+(Log):  CPU 0 Xlation Hit: page/frame 4->3
+(Info): Fetching instruction from physical address 0x1c
+(Info): Advancing time to 99
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 1 at ip va/pa 0x24/0x1c
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x10, now 0x14
+(Info): Translating (instruction) virtual address 0x28
+(Log):  CPU 0 Xlation Hit: page/frame 5->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Advancing time to 100
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x28/0x8
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x14
+(Info): Translating (instruction) virtual address 0x2c
+(Log):  CPU 0 Xlation Hit: page/frame 5->1
+(Info): Fetching instruction from physical address 0xc
+(Info): Advancing time to 101
+(Info): CPU 0 executing instruction 'branch_eq 2' for process 1 at ip va/pa 0x2c/0xc
+(Info): *** (branch_eq 2) BranchEq Reg0=0x14 Reg1=0x18 instruction offset 0x2. New ip 0x30
+(Info): Quantum expired for Process y(1) at time 101 after 4 ticks.
+(Info): Dispatching Process x(0) at time 101 with quantum 4.
+(Info): Translating (instruction) virtual address 0x80
+(Log):  CPU 0 Xlation Fault: page 16
+(Info): Instruction page fault at 0x80 in process 0 (page number 16)
+(Info): Swapping out frame. Token: 31 paddr: 38 page 0xd pid 0 time 101
+(Info): Swapping in frame from info: Token: 23 paddr: 28 page 0x10 pid 0 time 77 target paddr: 38 page 0x10 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 16->7
+(Log):  Instruction fault for Process x(0) at ip 0x80 resolved to physical address 0x38
+(Info): Translating (instruction) virtual address 0x80
+(Log):  CPU 0 Xlation Hit: page/frame 16->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Advancing time to 102
+(Info): CPU 0 executing instruction 'incrReg1 4' for process 0 at ip va/pa 0x80/0x38
+(Info): *** (incrReg1 4) 'Reg1 += 0x4' Reg1 was 0x4, now 0x8
+(Info): Translating (instruction) virtual address 0x84
+(Log):  CPU 0 Xlation Hit: page/frame 16->7
+(Info): Fetching instruction from physical address 0x3c
+(Info): Advancing time to 103
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x84/0x3c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x8
+(Info): Translating (instruction) virtual address 0x88
+(Log):  CPU 0 Xlation Fault: page 17
+(Info): Instruction page fault at 0x88 in process 0 (page number 17)
+(Info): Swapping out frame. Token: 32 paddr: 10 page 0x6 pid 1 time 103
+(Info): Swapping in frame from info: Token: 24 paddr: 30 page 0x11 pid 0 time 79 target paddr: 10 page 0x11 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 17->2
+(Log):  Instruction fault for Process x(0) at ip 0x88 resolved to physical address 0x10
+(Info): Translating (instruction) virtual address 0x88
+(Log):  CPU 0 Xlation Hit: page/frame 17->2
+(Info): Fetching instruction from physical address 0x10
+(Info): Advancing time to 104
+(Info): CPU 0 executing instruction 'branch_uc -19' for process 0 at ip va/pa 0x88/0x10
+(Info): *** (branch_uc -19) Branch to instruction offset 0xFFFFFFED. IP was 0x88, now 0x3C
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Fault: page 7
+(Info): Instruction page fault at 0x3c in process 0 (page number 7)
+(Info): Swapping out frame. Token: 33 paddr: 30 page 0x13 pid 0 time 104
+(Info): Swapping in frame from info: Token: 25 paddr: 20 page 0x7 pid 0 time 85 target paddr: 30 page 0x7 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 7->6
+(Log):  Instruction fault for Process x(0) at ip 0x3c resolved to physical address 0x34
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Hit: page/frame 7->6
+(Info): Fetching instruction from physical address 0x34
+(Info): Translating (data) virtual address 0xa0
+(Log):  CPU 0 Xlation Fault: page 20
+(Info): Data page fault at 0x3c in process 0 for data address 0xa0 (page number 20)
+(Info): Swapping out frame. Token: 34 paddr: 28 page 0xe pid 0 time 104
+(Info): Swapping in frame from info: Token: 4 paddr: 0 page 0x14 pid 0 time 43 target paddr: 28 page 0x14 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 20->5
+(Log):  Data fault for Process x(0) at ip 0x3c at address 0xa0 resolved to physical address 0x28.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Hit: page/frame 7->6
+(Info): Fetching instruction from physical address 0x34
+(Info): Translating (data) virtual address 0xa0
+(Log):  CPU 0 Xlation Hit: page/frame 20->5
+(Info): Data physical address 0x28
+(Info): Advancing time to 105
+(Info): CPU 0 executing instruction 'loadReg0Indirect 0' for process 0 at ip va/pa 0x3c/0x34
+(Info): *** (loadReg0Indirect 0) 'Reg0 = *(pa)0x28' Reg0 was 0x8, now 0x8
+(Info): Quantum expired for Process x(0) at time 105 after 4 ticks.
+(Info): Dispatching Process y(1) at time 105 with quantum 4.
+(Info): Translating (instruction) virtual address 0x30
+(Log):  CPU 0 Xlation Fault: page 6
+(Info): Instruction page fault at 0x30 in process 1 (page number 6)
+(Info): Swapping out frame. Token: 35 paddr: 0 page 0xf pid 0 time 105
+(Info): Swapping in frame from info: Token: 32 paddr: 10 page 0x6 pid 1 time 103 target paddr: 0 page 0x6 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 6->0
+(Log):  Instruction fault for Process y(1) at ip 0x30 resolved to physical address 0x0
+(Info): Translating (instruction) virtual address 0x30
+(Log):  CPU 0 Xlation Hit: page/frame 6->0
+(Info): Fetching instruction from physical address 0x0
+(Info): Advancing time to 106
+(Info): CPU 0 executing instruction 'branch_uc -4' for process 1 at ip va/pa 0x30/0x0
+(Info): *** (branch_uc -4) Branch to instruction offset 0xFFFFFFFC. IP was 0x30, now 0x20
+(Info): Translating (instruction) virtual address 0x20
+(Log):  CPU 0 Xlation Hit: page/frame 4->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Translating (data) virtual address 0xac
+(Log):  CPU 0 Xlation Hit: page/frame 21->4
+(Info): Data physical address 0x24
+(Info): Advancing time to 107
+(Info): CPU 0 executing instruction 'storeReg0Indirect 0' for process 1 at ip va/pa 0x20/0x18
+(Info): *** (storeReg0Indirect 0) '*(pa)0x24 = Reg0' *(pa)0x24 was 0x0, now 0x14
+(Info): Translating (instruction) virtual address 0x24
+(Log):  CPU 0 Xlation Hit: page/frame 4->3
+(Info): Fetching instruction from physical address 0x1c
+(Info): Advancing time to 108
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 1 at ip va/pa 0x24/0x1c
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x14, now 0x18
+(Info): Translating (instruction) virtual address 0x28
+(Log):  CPU 0 Xlation Hit: page/frame 5->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Advancing time to 109
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x28/0x8
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x18
+(Info): Quantum expired for Process y(1) at time 109 after 4 ticks.
+(Info): Dispatching Process x(0) at time 109 with quantum 4.
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Fault: page 8
+(Info): Instruction page fault at 0x40 in process 0 (page number 8)
+(Info): Swapping out frame. Token: 36 paddr: 38 page 0x10 pid 0 time 109
+(Info): Swapping in frame from info: Token: 27 paddr: 28 page 0x8 pid 0 time 93 target paddr: 38 page 0x8 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 8->7
+(Log):  Instruction fault for Process x(0) at ip 0x40 resolved to physical address 0x38
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Hit: page/frame 8->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Advancing time to 110
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x40/0x38
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x8
+(Info): Translating (instruction) virtual address 0x44
+(Log):  CPU 0 Xlation Hit: page/frame 8->7
+(Info): Fetching instruction from physical address 0x3c
+(Info): Advancing time to 111
+(Info): CPU 0 executing instruction 'branch_eq 5' for process 0 at ip va/pa 0x44/0x3c
+(Info): *** (branch_eq 5) BranchEq Reg0=0x8 Reg1=0x8 instruction offset 0x5. New ip 0x58
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Fault: page 11
+(Info): Instruction page fault at 0x58 in process 0 (page number 11)
+(Info): Swapping out frame. Token: 37 paddr: 10 page 0x11 pid 0 time 111
+(Info): Swapping in frame from info: Token: 28 paddr: 30 page 0xb pid 0 time 93 target paddr: 10 page 0xb pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 11->2
+(Log):  Instruction fault for Process x(0) at ip 0x58 resolved to physical address 0x10
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Hit: page/frame 11->2
+(Info): Fetching instruction from physical address 0x10
+(Info): Advancing time to 112
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 0 at ip va/pa 0x58/0x10
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x8, now 0xC
+(Info): Translating (instruction) virtual address 0x5c
+(Log):  CPU 0 Xlation Hit: page/frame 11->2
+(Info): Fetching instruction from physical address 0x14
+(Info): Advancing time to 113
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x5c/0x14
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0xc
+(Info): Quantum expired for Process x(0) at time 113 after 4 ticks.
+(Info): Dispatching Process y(1) at time 113 with quantum 4.
+(Info): Translating (instruction) virtual address 0x2c
+(Log):  CPU 0 Xlation Hit: page/frame 5->1
+(Info): Fetching instruction from physical address 0xc
+(Info): Advancing time to 114
+(Info): CPU 0 executing instruction 'branch_eq 2' for process 1 at ip va/pa 0x2c/0xc
+(Info): *** (branch_eq 2) BranchEq Reg0=0x18 Reg1=0x18 instruction offset 0x2. New ip 0x34
+(Info): Translating (instruction) virtual address 0x34
+(Log):  CPU 0 Xlation Hit: page/frame 6->0
+(Info): Fetching instruction from physical address 0x4
+(Info): Advancing time to 115
+(Info): CPU 0 executing instruction 'loadReg0PageAddr 0' for process 1 at ip va/pa 0x34/0x4
+(Info): *** (loadReg0PageAddr 0) 'Reg0 = 0x0' Reg0 now 0x0
+(Info): Translating (instruction) virtual address 0x38
+(Log):  CPU 0 Xlation Fault: page 7
+(Info): Instruction page fault at 0x38 in process 1 (page number 7)
+(Info): Swapping out frame. Token: 38 paddr: 30 page 0x7 pid 0 time 115
+(Log):  CPU 0 Xlation Hit: page/frame 7->6
+(Log):  Instruction fault for Process y(1) at ip 0x38 resolved to physical address 0x30
+(Info): Translating (instruction) virtual address 0x38
+(Log):  CPU 0 Xlation Hit: page/frame 7->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 116
+(Info): CPU 0 executing instruction 'loadReg1PageAddr 0' for process 1 at ip va/pa 0x38/0x30
+(Info): *** (loadReg1PageAddr 0) 'Reg1 = 0x0' Reg1 now 0x0
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Hit: page/frame 7->6
+(Info): Fetching instruction from physical address 0x34
+(Info): Translating (data) virtual address 0x98
+(Log):  CPU 0 Xlation Fault: page 19
+(Info): Data page fault at 0x3c in process 1 for data address 0x98 (page number 19)
+(Info): Swapping out frame. Token: 39 paddr: 28 page 0x14 pid 0 time 116
+(Info): Swapping in frame from info: Token: 22 paddr: 0 page 0x13 pid 1 time 75 target paddr: 28 page 0x13 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 19->5
+(Log):  Data fault for Process y(1) at ip 0x3c at address 0x98 resolved to physical address 0x28.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Hit: page/frame 7->6
+(Info): Fetching instruction from physical address 0x34
+(Info): Translating (data) virtual address 0x98
+(Log):  CPU 0 Xlation Hit: page/frame 19->5
+(Info): Data physical address 0x28
+(Info): Advancing time to 117
+(Info): CPU 0 executing instruction 'loadReg0Indirect 0' for process 1 at ip va/pa 0x3c/0x34
+(Info): *** (loadReg0Indirect 0) 'Reg0 = *(pa)0x28' Reg0 was 0x0, now 0x0
+(Info): Quantum expired for Process y(1) at time 117 after 4 ticks.
+(Info): Dispatching Process x(0) at time 117 with quantum 4.
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Fault: page 12
+(Info): Instruction page fault at 0x60 in process 0 (page number 12)
+(Info): Swapping out frame. Token: 40 paddr: 20 page 0x15 pid 1 time 117
+(Info): Swapping in frame from info: Token: 30 paddr: 20 page 0xc pid 0 time 97 target paddr: 20 page 0xc pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 12->4
+(Log):  Instruction fault for Process x(0) at ip 0x60 resolved to physical address 0x20
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Hit: page/frame 12->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Advancing time to 118
+(Info): CPU 0 executing instruction 'loadReg1PageAddr 0003' for process 0 at ip va/pa 0x60/0x20
+(Info): *** (loadReg1PageAddr 0003) 'Reg1 = 0x18' Reg1 now 0x18
+(Info): Translating (instruction) virtual address 0x64
+(Log):  CPU 0 Xlation Hit: page/frame 12->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Advancing time to 119
+(Info): CPU 0 executing instruction 'branch_eq 10' for process 0 at ip va/pa 0x64/0x24
+(Info): *** (branch_eq 10) BranchEq Reg0=0xC Reg1=0x18 instruction offset 0xA. New ip 0x68
+(Info): Translating (instruction) virtual address 0x68
+(Log):  CPU 0 Xlation Fault: page 13
+(Info): Instruction page fault at 0x68 in process 0 (page number 13)
+(Info): Swapping out frame. Token: 41 paddr: 18 page 0x4 pid 1 time 119
+(Info): Swapping in frame from info: Token: 31 paddr: 38 page 0xd pid 0 time 101 target paddr: 18 page 0xd pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 13->3
+(Log):  Instruction fault for Process x(0) at ip 0x68 resolved to physical address 0x18
+(Info): Translating (instruction) virtual address 0x68
+(Log):  CPU 0 Xlation Hit: page/frame 13->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Advancing time to 120
+(Info): CPU 0 executing instruction 'incrReg0 -4' for process 0 at ip va/pa 0x68/0x18
+(Info): *** (incrReg0 -4) 'Reg0 += 0xFFFFFFFC' Reg0 was 0xC, now 0x8
+(Info): Translating (instruction) virtual address 0x6c
+(Log):  CPU 0 Xlation Hit: page/frame 13->3
+(Info): Fetching instruction from physical address 0x1c
+(Info): Advancing time to 121
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x6c/0x1c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x8
+(Info): Quantum expired for Process x(0) at time 121 after 4 ticks.
+(Info): Dispatching Process y(1) at time 121 with quantum 4.
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Fault: page 8
+(Info): Instruction page fault at 0x40 in process 1 (page number 8)
+(Info): Swapping out frame. Token: 42 paddr: 38 page 0x8 pid 0 time 121
+(Log):  CPU 0 Xlation Hit: page/frame 8->7
+(Log):  Instruction fault for Process y(1) at ip 0x40 resolved to physical address 0x38
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Hit: page/frame 8->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Advancing time to 122
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x40/0x38
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x0
+(Info): Translating (instruction) virtual address 0x44
+(Log):  CPU 0 Xlation Hit: page/frame 8->7
+(Info): Fetching instruction from physical address 0x3c
+(Info): Advancing time to 123
+(Info): CPU 0 executing instruction 'branch_eq 5' for process 1 at ip va/pa 0x44/0x3c
+(Info): *** (branch_eq 5) BranchEq Reg0=0x0 Reg1=0x0 instruction offset 0x5. New ip 0x58
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Fault: page 11
+(Info): Instruction page fault at 0x58 in process 1 (page number 11)
+(Info): Swapping out frame. Token: 43 paddr: 10 page 0xb pid 0 time 123
+(Log):  CPU 0 Xlation Hit: page/frame 11->2
+(Log):  Instruction fault for Process y(1) at ip 0x58 resolved to physical address 0x10
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Hit: page/frame 11->2
+(Info): Fetching instruction from physical address 0x10
+(Info): Advancing time to 124
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 1 at ip va/pa 0x58/0x10
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x0, now 0x4
+(Info): Translating (instruction) virtual address 0x5c
+(Log):  CPU 0 Xlation Hit: page/frame 11->2
+(Info): Fetching instruction from physical address 0x14
+(Info): Advancing time to 125
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x5c/0x14
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x4
+(Info): Quantum expired for Process y(1) at time 125 after 4 ticks.
+(Info): Dispatching Process x(0) at time 125 with quantum 4.
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Fault: page 14
+(Info): Instruction page fault at 0x70 in process 0 (page number 14)
+(Info): Swapping out frame. Token: 44 paddr: 8 page 0x5 pid 1 time 125
+(Info): Swapping in frame from info: Token: 34 paddr: 28 page 0xe pid 0 time 104 target paddr: 8 page 0xe pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 14->1
+(Log):  Instruction fault for Process x(0) at ip 0x70 resolved to physical address 0x8
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Hit: page/frame 14->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Translating (data) virtual address 0xa0
+(Log):  CPU 0 Xlation Fault: page 20
+(Info): Data page fault at 0x70 in process 0 for data address 0xa0 (page number 20)
+(Info): Swapping out frame. Token: 45 paddr: 0 page 0x6 pid 1 time 125
+(Info): Swapping in frame from info: Token: 39 paddr: 28 page 0x14 pid 0 time 116 target paddr: 0 page 0x14 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 20->0
+(Log):  Data fault for Process x(0) at ip 0x70 at address 0xa0 resolved to physical address 0x0.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Hit: page/frame 14->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Translating (data) virtual address 0xa0
+(Log):  CPU 0 Xlation Hit: page/frame 20->0
+(Info): Data physical address 0x0
+(Info): Advancing time to 126
+(Info): CPU 0 executing instruction 'loadReg1Indirect 0' for process 0 at ip va/pa 0x70/0x8
+(Info): *** (loadReg1Indirect 0) 'Reg1 = *(pa)0x0' Reg1 was 0x18, now 0x8
+(Info): Translating (instruction) virtual address 0x74
+(Log):  CPU 0 Xlation Hit: page/frame 14->1
+(Info): Fetching instruction from physical address 0xc
+(Info): Advancing time to 127
+(Info): CPU 0 executing instruction 'printreg1' for process 0 at ip va/pa 0x74/0xc
+(Info): *** (printreg1) 
+(Log):  [PrintReg 1]  0x8
+(Info): Translating (instruction) virtual address 0x78
+(Log):  CPU 0 Xlation Fault: page 15
+(Info): Instruction page fault at 0x78 in process 0 (page number 15)
+(Info): Swapping out frame. Token: 46 paddr: 30 page 0x7 pid 1 time 127
+(Info): Swapping in frame from info: Token: 35 paddr: 0 page 0xf pid 0 time 105 target paddr: 30 page 0xf pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 15->6
+(Log):  Instruction fault for Process x(0) at ip 0x78 resolved to physical address 0x30
+(Info): Translating (instruction) virtual address 0x78
+(Log):  CPU 0 Xlation Hit: page/frame 15->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 128
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 0 at ip va/pa 0x78/0x30
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x8, now 0xC
+(Info): Translating (instruction) virtual address 0x7c
+(Log):  CPU 0 Xlation Hit: page/frame 15->6
+(Info): Fetching instruction from physical address 0x34
+(Info): Advancing time to 129
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x7c/0x34
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0xc
+(Info): Quantum expired for Process x(0) at time 129 after 4 ticks.
+(Info): Dispatching Process y(1) at time 129 with quantum 4.
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Fault: page 12
+(Info): Instruction page fault at 0x60 in process 1 (page number 12)
+(Info): Swapping out frame. Token: 47 paddr: 28 page 0x13 pid 1 time 129
+(Log):  CPU 0 Xlation Hit: page/frame 12->5
+(Log):  Instruction fault for Process y(1) at ip 0x60 resolved to physical address 0x28
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Hit: page/frame 12->5
+(Info): Fetching instruction from physical address 0x28
+(Info): Advancing time to 130
+(Info): CPU 0 executing instruction 'loadReg1PageAddr 0003' for process 1 at ip va/pa 0x60/0x28
+(Info): *** (loadReg1PageAddr 0003) 'Reg1 = 0x18' Reg1 now 0x18
+(Info): Translating (instruction) virtual address 0x64
+(Log):  CPU 0 Xlation Hit: page/frame 12->5
+(Info): Fetching instruction from physical address 0x2c
+(Info): Advancing time to 131
+(Info): CPU 0 executing instruction 'branch_eq 10' for process 1 at ip va/pa 0x64/0x2c
+(Info): *** (branch_eq 10) BranchEq Reg0=0x4 Reg1=0x18 instruction offset 0xA. New ip 0x68
+(Info): Translating (instruction) virtual address 0x68
+(Log):  CPU 0 Xlation Fault: page 13
+(Info): Instruction page fault at 0x68 in process 1 (page number 13)
+(Info): Swapping out frame. Token: 48 paddr: 20 page 0xc pid 0 time 131
+(Log):  CPU 0 Xlation Hit: page/frame 13->4
+(Log):  Instruction fault for Process y(1) at ip 0x68 resolved to physical address 0x20
+(Info): Translating (instruction) virtual address 0x68
+(Log):  CPU 0 Xlation Hit: page/frame 13->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Advancing time to 132
+(Info): CPU 0 executing instruction 'incrReg0 -4' for process 1 at ip va/pa 0x68/0x20
+(Info): *** (incrReg0 -4) 'Reg0 += 0xFFFFFFFC' Reg0 was 0x4, now 0x0
+(Info): Translating (instruction) virtual address 0x6c
+(Log):  CPU 0 Xlation Hit: page/frame 13->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Advancing time to 133
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x6c/0x24
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x0
+(Info): Quantum expired for Process y(1) at time 133 after 4 ticks.
+(Info): Dispatching Process x(0) at time 133 with quantum 4.
+(Info): Translating (instruction) virtual address 0x80
+(Log):  CPU 0 Xlation Fault: page 16
+(Info): Instruction page fault at 0x80 in process 0 (page number 16)
+(Info): Swapping out frame. Token: 49 paddr: 18 page 0xd pid 0 time 133
+(Info): Swapping in frame from info: Token: 36 paddr: 38 page 0x10 pid 0 time 109 target paddr: 18 page 0x10 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 16->3
+(Log):  Instruction fault for Process x(0) at ip 0x80 resolved to physical address 0x18
+(Info): Translating (instruction) virtual address 0x80
+(Log):  CPU 0 Xlation Hit: page/frame 16->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Advancing time to 134
+(Info): CPU 0 executing instruction 'incrReg1 4' for process 0 at ip va/pa 0x80/0x18
+(Info): *** (incrReg1 4) 'Reg1 += 0x4' Reg1 was 0x8, now 0xC
+(Info): Translating (instruction) virtual address 0x84
+(Log):  CPU 0 Xlation Hit: page/frame 16->3
+(Info): Fetching instruction from physical address 0x1c
+(Info): Advancing time to 135
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x84/0x1c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0xc
+(Info): Translating (instruction) virtual address 0x88
+(Log):  CPU 0 Xlation Fault: page 17
+(Info): Instruction page fault at 0x88 in process 0 (page number 17)
+(Info): Swapping out frame. Token: 50 paddr: 38 page 0x8 pid 1 time 135
+(Info): Swapping in frame from info: Token: 37 paddr: 10 page 0x11 pid 0 time 111 target paddr: 38 page 0x11 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 17->7
+(Log):  Instruction fault for Process x(0) at ip 0x88 resolved to physical address 0x38
+(Info): Translating (instruction) virtual address 0x88
+(Log):  CPU 0 Xlation Hit: page/frame 17->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Advancing time to 136
+(Info): CPU 0 executing instruction 'branch_uc -19' for process 0 at ip va/pa 0x88/0x38
+(Info): *** (branch_uc -19) Branch to instruction offset 0xFFFFFFED. IP was 0x88, now 0x3C
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Fault: page 7
+(Info): Instruction page fault at 0x3c in process 0 (page number 7)
+(Info): Swapping out frame. Token: 51 paddr: 10 page 0xb pid 1 time 136
+(Info): Swapping in frame from info: Token: 38 paddr: 30 page 0x7 pid 0 time 115 target paddr: 10 page 0x7 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 7->2
+(Log):  Instruction fault for Process x(0) at ip 0x3c resolved to physical address 0x14
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Hit: page/frame 7->2
+(Info): Fetching instruction from physical address 0x14
+(Info): Translating (data) virtual address 0xa4
+(Log):  CPU 0 Xlation Hit: page/frame 20->0
+(Info): Data physical address 0x4
+(Info): Advancing time to 137
+(Info): CPU 0 executing instruction 'loadReg0Indirect 0' for process 0 at ip va/pa 0x3c/0x14
+(Info): *** (loadReg0Indirect 0) 'Reg0 = *(pa)0x4' Reg0 was 0xC, now 0xC
+(Info): Quantum expired for Process x(0) at time 137 after 4 ticks.
+(Info): Dispatching Process y(1) at time 137 with quantum 4.
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Fault: page 14
+(Info): Instruction page fault at 0x70 in process 1 (page number 14)
+(Info): Swapping out frame. Token: 52 paddr: 8 page 0xe pid 0 time 137
+(Log):  CPU 0 Xlation Hit: page/frame 14->1
+(Log):  Instruction fault for Process y(1) at ip 0x70 resolved to physical address 0x8
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Hit: page/frame 14->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Translating (data) virtual address 0x98
+(Log):  CPU 0 Xlation Fault: page 19
+(Info): Data page fault at 0x70 in process 1 for data address 0x98 (page number 19)
+(Info): Swapping out frame. Token: 53 paddr: 30 page 0xf pid 0 time 137
+(Info): Swapping in frame from info: Token: 47 paddr: 28 page 0x13 pid 1 time 129 target paddr: 30 page 0x13 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 19->6
+(Log):  Data fault for Process y(1) at ip 0x70 at address 0x98 resolved to physical address 0x30.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Hit: page/frame 14->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Translating (data) virtual address 0x98
+(Log):  CPU 0 Xlation Hit: page/frame 19->6
+(Info): Data physical address 0x30
+(Info): Advancing time to 138
+(Info): CPU 0 executing instruction 'loadReg1Indirect 0' for process 1 at ip va/pa 0x70/0x8
+(Info): *** (loadReg1Indirect 0) 'Reg1 = *(pa)0x30' Reg1 was 0x18, now 0x0
+(Info): Translating (instruction) virtual address 0x74
+(Log):  CPU 0 Xlation Hit: page/frame 14->1
+(Info): Fetching instruction from physical address 0xc
+(Info): Advancing time to 139
+(Info): CPU 0 executing instruction 'printreg1' for process 1 at ip va/pa 0x74/0xc
+(Info): *** (printreg1) 
+(Log):  [PrintReg 1]  0x0
+(Info): Translating (instruction) virtual address 0x78
+(Log):  CPU 0 Xlation Fault: page 15
+(Info): Instruction page fault at 0x78 in process 1 (page number 15)
+(Info): Swapping out frame. Token: 54 paddr: 28 page 0xc pid 1 time 139
+(Log):  CPU 0 Xlation Hit: page/frame 15->5
+(Log):  Instruction fault for Process y(1) at ip 0x78 resolved to physical address 0x28
+(Info): Translating (instruction) virtual address 0x78
+(Log):  CPU 0 Xlation Hit: page/frame 15->5
+(Info): Fetching instruction from physical address 0x28
+(Info): Advancing time to 140
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 1 at ip va/pa 0x78/0x28
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x0, now 0x4
+(Info): Translating (instruction) virtual address 0x7c
+(Log):  CPU 0 Xlation Hit: page/frame 15->5
+(Info): Fetching instruction from physical address 0x2c
+(Info): Advancing time to 141
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x7c/0x2c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x4
+(Info): Quantum expired for Process y(1) at time 141 after 4 ticks.
+(Info): Dispatching Process x(0) at time 141 with quantum 4.
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Fault: page 8
+(Info): Instruction page fault at 0x40 in process 0 (page number 8)
+(Info): Swapping out frame. Token: 55 paddr: 20 page 0xd pid 1 time 141
+(Info): Swapping in frame from info: Token: 42 paddr: 38 page 0x8 pid 0 time 121 target paddr: 20 page 0x8 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 8->4
+(Log):  Instruction fault for Process x(0) at ip 0x40 resolved to physical address 0x20
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Hit: page/frame 8->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Advancing time to 142
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x40/0x20
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0xc
+(Info): Translating (instruction) virtual address 0x44
+(Log):  CPU 0 Xlation Hit: page/frame 8->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Advancing time to 143
+(Info): CPU 0 executing instruction 'branch_eq 5' for process 0 at ip va/pa 0x44/0x24
+(Info): *** (branch_eq 5) BranchEq Reg0=0xC Reg1=0xC instruction offset 0x5. New ip 0x58
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Fault: page 11
+(Info): Instruction page fault at 0x58 in process 0 (page number 11)
+(Info): Swapping out frame. Token: 56 paddr: 18 page 0x10 pid 0 time 143
+(Info): Swapping in frame from info: Token: 43 paddr: 10 page 0xb pid 0 time 123 target paddr: 18 page 0xb pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 11->3
+(Log):  Instruction fault for Process x(0) at ip 0x58 resolved to physical address 0x18
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Hit: page/frame 11->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Advancing time to 144
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 0 at ip va/pa 0x58/0x18
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0xC, now 0x10
+(Info): Translating (instruction) virtual address 0x5c
+(Log):  CPU 0 Xlation Hit: page/frame 11->3
+(Info): Fetching instruction from physical address 0x1c
+(Info): Advancing time to 145
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x5c/0x1c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x10
+(Info): Quantum expired for Process x(0) at time 145 after 4 ticks.
+(Info): Dispatching Process y(1) at time 145 with quantum 4.
+(Info): Translating (instruction) virtual address 0x80
+(Log):  CPU 0 Xlation Fault: page 16
+(Info): Instruction page fault at 0x80 in process 1 (page number 16)
+(Info): Swapping out frame. Token: 57 paddr: 38 page 0x11 pid 0 time 145
+(Log):  CPU 0 Xlation Hit: page/frame 16->7
+(Log):  Instruction fault for Process y(1) at ip 0x80 resolved to physical address 0x38
+(Info): Translating (instruction) virtual address 0x80
+(Log):  CPU 0 Xlation Hit: page/frame 16->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Advancing time to 146
+(Info): CPU 0 executing instruction 'incrReg1 4' for process 1 at ip va/pa 0x80/0x38
+(Info): *** (incrReg1 4) 'Reg1 += 0x4' Reg1 was 0x0, now 0x4
+(Info): Translating (instruction) virtual address 0x84
+(Log):  CPU 0 Xlation Hit: page/frame 16->7
+(Info): Fetching instruction from physical address 0x3c
+(Info): Advancing time to 147
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x84/0x3c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x4
+(Info): Translating (instruction) virtual address 0x88
+(Log):  CPU 0 Xlation Fault: page 17
+(Info): Instruction page fault at 0x88 in process 1 (page number 17)
+(Info): Swapping out frame. Token: 58 paddr: 10 page 0x7 pid 0 time 147
+(Log):  CPU 0 Xlation Hit: page/frame 17->2
+(Log):  Instruction fault for Process y(1) at ip 0x88 resolved to physical address 0x10
+(Info): Translating (instruction) virtual address 0x88
+(Log):  CPU 0 Xlation Hit: page/frame 17->2
+(Info): Fetching instruction from physical address 0x10
+(Info): Advancing time to 148
+(Info): CPU 0 executing instruction 'branch_uc -19' for process 1 at ip va/pa 0x88/0x10
+(Info): *** (branch_uc -19) Branch to instruction offset 0xFFFFFFED. IP was 0x88, now 0x3C
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Fault: page 7
+(Info): Instruction page fault at 0x3c in process 1 (page number 7)
+(Info): Swapping out frame. Token: 59 paddr: 0 page 0x14 pid 0 time 148
+(Info): Swapping in frame from info: Token: 46 paddr: 30 page 0x7 pid 1 time 127 target paddr: 0 page 0x7 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 7->0
+(Log):  Instruction fault for Process y(1) at ip 0x3c resolved to physical address 0x4
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Hit: page/frame 7->0
+(Info): Fetching instruction from physical address 0x4
+(Info): Translating (data) virtual address 0x9c
+(Log):  CPU 0 Xlation Hit: page/frame 19->6
+(Info): Data physical address 0x34
+(Info): Advancing time to 149
+(Info): CPU 0 executing instruction 'loadReg0Indirect 0' for process 1 at ip va/pa 0x3c/0x4
+(Info): *** (loadReg0Indirect 0) 'Reg0 = *(pa)0x34' Reg0 was 0x4, now 0x4
+(Info): Quantum expired for Process y(1) at time 149 after 4 ticks.
+(Info): Dispatching Process x(0) at time 149 with quantum 4.
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Fault: page 12
+(Info): Instruction page fault at 0x60 in process 0 (page number 12)
+(Info): Swapping out frame. Token: 60 paddr: 8 page 0xe pid 1 time 149
+(Info): Swapping in frame from info: Token: 48 paddr: 20 page 0xc pid 0 time 131 target paddr: 8 page 0xc pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 12->1
+(Log):  Instruction fault for Process x(0) at ip 0x60 resolved to physical address 0x8
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Hit: page/frame 12->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Advancing time to 150
+(Info): CPU 0 executing instruction 'loadReg1PageAddr 0003' for process 0 at ip va/pa 0x60/0x8
+(Info): *** (loadReg1PageAddr 0003) 'Reg1 = 0x18' Reg1 now 0x18
+(Info): Translating (instruction) virtual address 0x64
+(Log):  CPU 0 Xlation Hit: page/frame 12->1
+(Info): Fetching instruction from physical address 0xc
+(Info): Advancing time to 151
+(Info): CPU 0 executing instruction 'branch_eq 10' for process 0 at ip va/pa 0x64/0xc
+(Info): *** (branch_eq 10) BranchEq Reg0=0x10 Reg1=0x18 instruction offset 0xA. New ip 0x68
+(Info): Translating (instruction) virtual address 0x68
+(Log):  CPU 0 Xlation Fault: page 13
+(Info): Instruction page fault at 0x68 in process 0 (page number 13)
+(Info): Swapping out frame. Token: 61 paddr: 28 page 0xf pid 1 time 151
+(Info): Swapping in frame from info: Token: 49 paddr: 18 page 0xd pid 0 time 133 target paddr: 28 page 0xd pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 13->5
+(Log):  Instruction fault for Process x(0) at ip 0x68 resolved to physical address 0x28
+(Info): Translating (instruction) virtual address 0x68
+(Log):  CPU 0 Xlation Hit: page/frame 13->5
+(Info): Fetching instruction from physical address 0x28
+(Info): Advancing time to 152
+(Info): CPU 0 executing instruction 'incrReg0 -4' for process 0 at ip va/pa 0x68/0x28
+(Info): *** (incrReg0 -4) 'Reg0 += 0xFFFFFFFC' Reg0 was 0x10, now 0xC
+(Info): Translating (instruction) virtual address 0x6c
+(Log):  CPU 0 Xlation Hit: page/frame 13->5
+(Info): Fetching instruction from physical address 0x2c
+(Info): Advancing time to 153
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x6c/0x2c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0xc
+(Info): Quantum expired for Process x(0) at time 153 after 4 ticks.
+(Info): Dispatching Process y(1) at time 153 with quantum 4.
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Fault: page 8
+(Info): Instruction page fault at 0x40 in process 1 (page number 8)
+(Info): Swapping out frame. Token: 62 paddr: 20 page 0x8 pid 0 time 153
+(Info): Swapping in frame from info: Token: 50 paddr: 38 page 0x8 pid 1 time 135 target paddr: 20 page 0x8 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 8->4
+(Log):  Instruction fault for Process y(1) at ip 0x40 resolved to physical address 0x20
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Hit: page/frame 8->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Advancing time to 154
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x40/0x20
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x4
+(Info): Translating (instruction) virtual address 0x44
+(Log):  CPU 0 Xlation Hit: page/frame 8->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Advancing time to 155
+(Info): CPU 0 executing instruction 'branch_eq 5' for process 1 at ip va/pa 0x44/0x24
+(Info): *** (branch_eq 5) BranchEq Reg0=0x4 Reg1=0x4 instruction offset 0x5. New ip 0x58
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Fault: page 11
+(Info): Instruction page fault at 0x58 in process 1 (page number 11)
+(Info): Swapping out frame. Token: 63 paddr: 18 page 0xb pid 0 time 155
+(Info): Swapping in frame from info: Token: 51 paddr: 10 page 0xb pid 1 time 136 target paddr: 18 page 0xb pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 11->3
+(Log):  Instruction fault for Process y(1) at ip 0x58 resolved to physical address 0x18
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Hit: page/frame 11->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Advancing time to 156
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 1 at ip va/pa 0x58/0x18
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x4, now 0x8
+(Info): Translating (instruction) virtual address 0x5c
+(Log):  CPU 0 Xlation Hit: page/frame 11->3
+(Info): Fetching instruction from physical address 0x1c
+(Info): Advancing time to 157
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x5c/0x1c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x8
+(Info): Quantum expired for Process y(1) at time 157 after 4 ticks.
+(Info): Dispatching Process x(0) at time 157 with quantum 4.
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Fault: page 14
+(Info): Instruction page fault at 0x70 in process 0 (page number 14)
+(Info): Swapping out frame. Token: 64 paddr: 38 page 0x10 pid 1 time 157
+(Info): Swapping in frame from info: Token: 52 paddr: 8 page 0xe pid 0 time 137 target paddr: 38 page 0xe pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 14->7
+(Log):  Instruction fault for Process x(0) at ip 0x70 resolved to physical address 0x38
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Hit: page/frame 14->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Translating (data) virtual address 0xa4
+(Log):  CPU 0 Xlation Fault: page 20
+(Info): Data page fault at 0x70 in process 0 for data address 0xa4 (page number 20)
+(Info): Swapping out frame. Token: 65 paddr: 10 page 0x11 pid 1 time 157
+(Info): Swapping in frame from info: Token: 59 paddr: 0 page 0x14 pid 0 time 148 target paddr: 10 page 0x14 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 20->2
+(Log):  Data fault for Process x(0) at ip 0x70 at address 0xa4 resolved to physical address 0x14.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Hit: page/frame 14->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Translating (data) virtual address 0xa4
+(Log):  CPU 0 Xlation Hit: page/frame 20->2
+(Info): Data physical address 0x14
+(Info): Advancing time to 158
+(Info): CPU 0 executing instruction 'loadReg1Indirect 0' for process 0 at ip va/pa 0x70/0x38
+(Info): *** (loadReg1Indirect 0) 'Reg1 = *(pa)0x14' Reg1 was 0x18, now 0xC
+(Info): Translating (instruction) virtual address 0x74
+(Log):  CPU 0 Xlation Hit: page/frame 14->7
+(Info): Fetching instruction from physical address 0x3c
+(Info): Advancing time to 159
+(Info): CPU 0 executing instruction 'printreg1' for process 0 at ip va/pa 0x74/0x3c
+(Info): *** (printreg1) 
+(Log):  [PrintReg 1]  0xc
+(Info): Translating (instruction) virtual address 0x78
+(Log):  CPU 0 Xlation Fault: page 15
+(Info): Instruction page fault at 0x78 in process 0 (page number 15)
+(Info): Swapping out frame. Token: 66 paddr: 0 page 0x7 pid 1 time 159
+(Info): Swapping in frame from info: Token: 53 paddr: 30 page 0xf pid 0 time 137 target paddr: 0 page 0xf pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 15->0
+(Log):  Instruction fault for Process x(0) at ip 0x78 resolved to physical address 0x0
+(Info): Translating (instruction) virtual address 0x78
+(Log):  CPU 0 Xlation Hit: page/frame 15->0
+(Info): Fetching instruction from physical address 0x0
+(Info): Advancing time to 160
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 0 at ip va/pa 0x78/0x0
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0xC, now 0x10
+(Info): Translating (instruction) virtual address 0x7c
+(Log):  CPU 0 Xlation Hit: page/frame 15->0
+(Info): Fetching instruction from physical address 0x4
+(Info): Advancing time to 161
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x7c/0x4
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x10
+(Info): Quantum expired for Process x(0) at time 161 after 4 ticks.
+(Info): Dispatching Process y(1) at time 161 with quantum 4.
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Fault: page 12
+(Info): Instruction page fault at 0x60 in process 1 (page number 12)
+(Info): Swapping out frame. Token: 67 paddr: 30 page 0x13 pid 1 time 161
+(Info): Swapping in frame from info: Token: 54 paddr: 28 page 0xc pid 1 time 139 target paddr: 30 page 0xc pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 12->6
+(Log):  Instruction fault for Process y(1) at ip 0x60 resolved to physical address 0x30
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Hit: page/frame 12->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 162
+(Info): CPU 0 executing instruction 'loadReg1PageAddr 0003' for process 1 at ip va/pa 0x60/0x30
+(Info): *** (loadReg1PageAddr 0003) 'Reg1 = 0x18' Reg1 now 0x18
+(Info): Translating (instruction) virtual address 0x64
+(Log):  CPU 0 Xlation Hit: page/frame 12->6
+(Info): Fetching instruction from physical address 0x34
+(Info): Advancing time to 163
+(Info): CPU 0 executing instruction 'branch_eq 10' for process 1 at ip va/pa 0x64/0x34
+(Info): *** (branch_eq 10) BranchEq Reg0=0x8 Reg1=0x18 instruction offset 0xA. New ip 0x68
+(Info): Translating (instruction) virtual address 0x68
+(Log):  CPU 0 Xlation Fault: page 13
+(Info): Instruction page fault at 0x68 in process 1 (page number 13)
+(Info): Swapping out frame. Token: 68 paddr: 8 page 0xc pid 0 time 163
+(Info): Swapping in frame from info: Token: 55 paddr: 20 page 0xd pid 1 time 141 target paddr: 8 page 0xd pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 13->1
+(Log):  Instruction fault for Process y(1) at ip 0x68 resolved to physical address 0x8
+(Info): Translating (instruction) virtual address 0x68
+(Log):  CPU 0 Xlation Hit: page/frame 13->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Advancing time to 164
+(Info): CPU 0 executing instruction 'incrReg0 -4' for process 1 at ip va/pa 0x68/0x8
+(Info): *** (incrReg0 -4) 'Reg0 += 0xFFFFFFFC' Reg0 was 0x8, now 0x4
+(Info): Translating (instruction) virtual address 0x6c
+(Log):  CPU 0 Xlation Hit: page/frame 13->1
+(Info): Fetching instruction from physical address 0xc
+(Info): Advancing time to 165
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x6c/0xc
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x4
+(Info): Quantum expired for Process y(1) at time 165 after 4 ticks.
+(Info): Dispatching Process x(0) at time 165 with quantum 4.
+(Info): Translating (instruction) virtual address 0x80
+(Log):  CPU 0 Xlation Fault: page 16
+(Info): Instruction page fault at 0x80 in process 0 (page number 16)
+(Info): Swapping out frame. Token: 69 paddr: 28 page 0xd pid 0 time 165
+(Info): Swapping in frame from info: Token: 56 paddr: 18 page 0x10 pid 0 time 143 target paddr: 28 page 0x10 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 16->5
+(Log):  Instruction fault for Process x(0) at ip 0x80 resolved to physical address 0x28
+(Info): Translating (instruction) virtual address 0x80
+(Log):  CPU 0 Xlation Hit: page/frame 16->5
+(Info): Fetching instruction from physical address 0x28
+(Info): Advancing time to 166
+(Info): CPU 0 executing instruction 'incrReg1 4' for process 0 at ip va/pa 0x80/0x28
+(Info): *** (incrReg1 4) 'Reg1 += 0x4' Reg1 was 0xC, now 0x10
+(Info): Translating (instruction) virtual address 0x84
+(Log):  CPU 0 Xlation Hit: page/frame 16->5
+(Info): Fetching instruction from physical address 0x2c
+(Info): Advancing time to 167
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x84/0x2c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x10
+(Info): Translating (instruction) virtual address 0x88
+(Log):  CPU 0 Xlation Fault: page 17
+(Info): Instruction page fault at 0x88 in process 0 (page number 17)
+(Info): Swapping out frame. Token: 70 paddr: 20 page 0x8 pid 1 time 167
+(Info): Swapping in frame from info: Token: 57 paddr: 38 page 0x11 pid 0 time 145 target paddr: 20 page 0x11 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 17->4
+(Log):  Instruction fault for Process x(0) at ip 0x88 resolved to physical address 0x20
+(Info): Translating (instruction) virtual address 0x88
+(Log):  CPU 0 Xlation Hit: page/frame 17->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Advancing time to 168
+(Info): CPU 0 executing instruction 'branch_uc -19' for process 0 at ip va/pa 0x88/0x20
+(Info): *** (branch_uc -19) Branch to instruction offset 0xFFFFFFED. IP was 0x88, now 0x3C
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Fault: page 7
+(Info): Instruction page fault at 0x3c in process 0 (page number 7)
+(Info): Swapping out frame. Token: 71 paddr: 18 page 0xb pid 1 time 168
+(Info): Swapping in frame from info: Token: 58 paddr: 10 page 0x7 pid 0 time 147 target paddr: 18 page 0x7 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 7->3
+(Log):  Instruction fault for Process x(0) at ip 0x3c resolved to physical address 0x1c
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Hit: page/frame 7->3
+(Info): Fetching instruction from physical address 0x1c
+(Info): Translating (data) virtual address 0xa8
+(Log):  CPU 0 Xlation Fault: page 21
+(Info): Data page fault at 0x3c in process 0 for data address 0xa8 (page number 21)
+(Info): Swapping out frame. Token: 72 paddr: 10 page 0x14 pid 0 time 168
+(Info): Swapping in frame from info: Token: 5 paddr: 8 page 0x15 pid 0 time 45 target paddr: 10 page 0x15 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 21->2
+(Log):  Data fault for Process x(0) at ip 0x3c at address 0xa8 resolved to physical address 0x10.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Hit: page/frame 7->3
+(Info): Fetching instruction from physical address 0x1c
+(Info): Translating (data) virtual address 0xa8
+(Log):  CPU 0 Xlation Hit: page/frame 21->2
+(Info): Data physical address 0x10
+(Info): Advancing time to 169
+(Info): CPU 0 executing instruction 'loadReg0Indirect 0' for process 0 at ip va/pa 0x3c/0x1c
+(Info): *** (loadReg0Indirect 0) 'Reg0 = *(pa)0x10' Reg0 was 0x10, now 0x10
+(Info): Quantum expired for Process x(0) at time 169 after 4 ticks.
+(Info): Dispatching Process y(1) at time 169 with quantum 4.
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Fault: page 14
+(Info): Instruction page fault at 0x70 in process 1 (page number 14)
+(Info): Swapping out frame. Token: 73 paddr: 38 page 0xe pid 0 time 169
+(Info): Swapping in frame from info: Token: 60 paddr: 8 page 0xe pid 1 time 149 target paddr: 38 page 0xe pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 14->7
+(Log):  Instruction fault for Process y(1) at ip 0x70 resolved to physical address 0x38
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Hit: page/frame 14->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Translating (data) virtual address 0x9c
+(Log):  CPU 0 Xlation Fault: page 19
+(Info): Data page fault at 0x70 in process 1 for data address 0x9c (page number 19)
+(Info): Swapping out frame. Token: 74 paddr: 0 page 0xf pid 0 time 169
+(Info): Swapping in frame from info: Token: 67 paddr: 30 page 0x13 pid 1 time 161 target paddr: 0 page 0x13 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 19->0
+(Log):  Data fault for Process y(1) at ip 0x70 at address 0x9c resolved to physical address 0x4.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Hit: page/frame 14->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Translating (data) virtual address 0x9c
+(Log):  CPU 0 Xlation Hit: page/frame 19->0
+(Info): Data physical address 0x4
+(Info): Advancing time to 170
+(Info): CPU 0 executing instruction 'loadReg1Indirect 0' for process 1 at ip va/pa 0x70/0x38
+(Info): *** (loadReg1Indirect 0) 'Reg1 = *(pa)0x4' Reg1 was 0x18, now 0x4
+(Info): Translating (instruction) virtual address 0x74
+(Log):  CPU 0 Xlation Hit: page/frame 14->7
+(Info): Fetching instruction from physical address 0x3c
+(Info): Advancing time to 171
+(Info): CPU 0 executing instruction 'printreg1' for process 1 at ip va/pa 0x74/0x3c
+(Info): *** (printreg1) 
+(Log):  [PrintReg 1]  0x4
+(Info): Translating (instruction) virtual address 0x78
+(Log):  CPU 0 Xlation Fault: page 15
+(Info): Instruction page fault at 0x78 in process 1 (page number 15)
+(Info): Swapping out frame. Token: 75 paddr: 30 page 0xc pid 1 time 171
+(Info): Swapping in frame from info: Token: 61 paddr: 28 page 0xf pid 1 time 151 target paddr: 30 page 0xf pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 15->6
+(Log):  Instruction fault for Process y(1) at ip 0x78 resolved to physical address 0x30
+(Info): Translating (instruction) virtual address 0x78
+(Log):  CPU 0 Xlation Hit: page/frame 15->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 172
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 1 at ip va/pa 0x78/0x30
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x4, now 0x8
+(Info): Translating (instruction) virtual address 0x7c
+(Log):  CPU 0 Xlation Hit: page/frame 15->6
+(Info): Fetching instruction from physical address 0x34
+(Info): Advancing time to 173
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x7c/0x34
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x8
+(Info): Quantum expired for Process y(1) at time 173 after 4 ticks.
+(Info): Dispatching Process x(0) at time 173 with quantum 4.
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Fault: page 8
+(Info): Instruction page fault at 0x40 in process 0 (page number 8)
+(Info): Swapping out frame. Token: 76 paddr: 8 page 0xd pid 1 time 173
+(Info): Swapping in frame from info: Token: 62 paddr: 20 page 0x8 pid 0 time 153 target paddr: 8 page 0x8 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 8->1
+(Log):  Instruction fault for Process x(0) at ip 0x40 resolved to physical address 0x8
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Hit: page/frame 8->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Advancing time to 174
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x40/0x8
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x10
+(Info): Translating (instruction) virtual address 0x44
+(Log):  CPU 0 Xlation Hit: page/frame 8->1
+(Info): Fetching instruction from physical address 0xc
+(Info): Advancing time to 175
+(Info): CPU 0 executing instruction 'branch_eq 5' for process 0 at ip va/pa 0x44/0xc
+(Info): *** (branch_eq 5) BranchEq Reg0=0x10 Reg1=0x10 instruction offset 0x5. New ip 0x58
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Fault: page 11
+(Info): Instruction page fault at 0x58 in process 0 (page number 11)
+(Info): Swapping out frame. Token: 77 paddr: 28 page 0x10 pid 0 time 175
+(Info): Swapping in frame from info: Token: 63 paddr: 18 page 0xb pid 0 time 155 target paddr: 28 page 0xb pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 11->5
+(Log):  Instruction fault for Process x(0) at ip 0x58 resolved to physical address 0x28
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Hit: page/frame 11->5
+(Info): Fetching instruction from physical address 0x28
+(Info): Advancing time to 176
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 0 at ip va/pa 0x58/0x28
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x10, now 0x14
+(Info): Translating (instruction) virtual address 0x5c
+(Log):  CPU 0 Xlation Hit: page/frame 11->5
+(Info): Fetching instruction from physical address 0x2c
+(Info): Advancing time to 177
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x5c/0x2c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x14
+(Info): Quantum expired for Process x(0) at time 177 after 4 ticks.
+(Info): Dispatching Process y(1) at time 177 with quantum 4.
+(Info): Translating (instruction) virtual address 0x80
+(Log):  CPU 0 Xlation Fault: page 16
+(Info): Instruction page fault at 0x80 in process 1 (page number 16)
+(Info): Swapping out frame. Token: 78 paddr: 20 page 0x11 pid 0 time 177
+(Info): Swapping in frame from info: Token: 64 paddr: 38 page 0x10 pid 1 time 157 target paddr: 20 page 0x10 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 16->4
+(Log):  Instruction fault for Process y(1) at ip 0x80 resolved to physical address 0x20
+(Info): Translating (instruction) virtual address 0x80
+(Log):  CPU 0 Xlation Hit: page/frame 16->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Advancing time to 178
+(Info): CPU 0 executing instruction 'incrReg1 4' for process 1 at ip va/pa 0x80/0x20
+(Info): *** (incrReg1 4) 'Reg1 += 0x4' Reg1 was 0x4, now 0x8
+(Info): Translating (instruction) virtual address 0x84
+(Log):  CPU 0 Xlation Hit: page/frame 16->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Advancing time to 179
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x84/0x24
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x8
+(Info): Translating (instruction) virtual address 0x88
+(Log):  CPU 0 Xlation Fault: page 17
+(Info): Instruction page fault at 0x88 in process 1 (page number 17)
+(Info): Swapping out frame. Token: 79 paddr: 18 page 0x7 pid 0 time 179
+(Info): Swapping in frame from info: Token: 65 paddr: 10 page 0x11 pid 1 time 157 target paddr: 18 page 0x11 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 17->3
+(Log):  Instruction fault for Process y(1) at ip 0x88 resolved to physical address 0x18
+(Info): Translating (instruction) virtual address 0x88
+(Log):  CPU 0 Xlation Hit: page/frame 17->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Advancing time to 180
+(Info): CPU 0 executing instruction 'branch_uc -19' for process 1 at ip va/pa 0x88/0x18
+(Info): *** (branch_uc -19) Branch to instruction offset 0xFFFFFFED. IP was 0x88, now 0x3C
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Fault: page 7
+(Info): Instruction page fault at 0x3c in process 1 (page number 7)
+(Info): Swapping out frame. Token: 80 paddr: 10 page 0x15 pid 0 time 180
+(Info): Swapping in frame from info: Token: 66 paddr: 0 page 0x7 pid 1 time 159 target paddr: 10 page 0x7 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 7->2
+(Log):  Instruction fault for Process y(1) at ip 0x3c resolved to physical address 0x14
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Hit: page/frame 7->2
+(Info): Fetching instruction from physical address 0x14
+(Info): Translating (data) virtual address 0xa0
+(Log):  CPU 0 Xlation Fault: page 20
+(Info): Data page fault at 0x3c in process 1 for data address 0xa0 (page number 20)
+(Info): Swapping out frame. Token: 81 paddr: 0 page 0x13 pid 1 time 180
+(Info): Swapping in frame from info: Token: 29 paddr: 0 page 0x14 pid 1 time 95 target paddr: 0 page 0x14 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 20->0
+(Log):  Data fault for Process y(1) at ip 0x3c at address 0xa0 resolved to physical address 0x0.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Hit: page/frame 7->2
+(Info): Fetching instruction from physical address 0x14
+(Info): Translating (data) virtual address 0xa0
+(Log):  CPU 0 Xlation Hit: page/frame 20->0
+(Info): Data physical address 0x0
+(Info): Advancing time to 181
+(Info): CPU 0 executing instruction 'loadReg0Indirect 0' for process 1 at ip va/pa 0x3c/0x14
+(Info): *** (loadReg0Indirect 0) 'Reg0 = *(pa)0x0' Reg0 was 0x8, now 0x8
+(Info): Quantum expired for Process y(1) at time 181 after 4 ticks.
+(Info): Dispatching Process x(0) at time 181 with quantum 4.
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Fault: page 12
+(Info): Instruction page fault at 0x60 in process 0 (page number 12)
+(Info): Swapping out frame. Token: 82 paddr: 38 page 0xe pid 1 time 181
+(Info): Swapping in frame from info: Token: 68 paddr: 8 page 0xc pid 0 time 163 target paddr: 38 page 0xc pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 12->7
+(Log):  Instruction fault for Process x(0) at ip 0x60 resolved to physical address 0x38
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Hit: page/frame 12->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Advancing time to 182
+(Info): CPU 0 executing instruction 'loadReg1PageAddr 0003' for process 0 at ip va/pa 0x60/0x38
+(Info): *** (loadReg1PageAddr 0003) 'Reg1 = 0x18' Reg1 now 0x18
+(Info): Translating (instruction) virtual address 0x64
+(Log):  CPU 0 Xlation Hit: page/frame 12->7
+(Info): Fetching instruction from physical address 0x3c
+(Info): Advancing time to 183
+(Info): CPU 0 executing instruction 'branch_eq 10' for process 0 at ip va/pa 0x64/0x3c
+(Info): *** (branch_eq 10) BranchEq Reg0=0x14 Reg1=0x18 instruction offset 0xA. New ip 0x68
+(Info): Translating (instruction) virtual address 0x68
+(Log):  CPU 0 Xlation Fault: page 13
+(Info): Instruction page fault at 0x68 in process 0 (page number 13)
+(Info): Swapping out frame. Token: 83 paddr: 30 page 0xf pid 1 time 183
+(Info): Swapping in frame from info: Token: 69 paddr: 28 page 0xd pid 0 time 165 target paddr: 30 page 0xd pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 13->6
+(Log):  Instruction fault for Process x(0) at ip 0x68 resolved to physical address 0x30
+(Info): Translating (instruction) virtual address 0x68
+(Log):  CPU 0 Xlation Hit: page/frame 13->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 184
+(Info): CPU 0 executing instruction 'incrReg0 -4' for process 0 at ip va/pa 0x68/0x30
+(Info): *** (incrReg0 -4) 'Reg0 += 0xFFFFFFFC' Reg0 was 0x14, now 0x10
+(Info): Translating (instruction) virtual address 0x6c
+(Log):  CPU 0 Xlation Hit: page/frame 13->6
+(Info): Fetching instruction from physical address 0x34
+(Info): Advancing time to 185
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x6c/0x34
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x10
+(Info): Quantum expired for Process x(0) at time 185 after 4 ticks.
+(Info): Dispatching Process y(1) at time 185 with quantum 4.
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Fault: page 8
+(Info): Instruction page fault at 0x40 in process 1 (page number 8)
+(Info): Swapping out frame. Token: 84 paddr: 8 page 0x8 pid 0 time 185
+(Info): Swapping in frame from info: Token: 70 paddr: 20 page 0x8 pid 1 time 167 target paddr: 8 page 0x8 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 8->1
+(Log):  Instruction fault for Process y(1) at ip 0x40 resolved to physical address 0x8
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Hit: page/frame 8->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Advancing time to 186
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x40/0x8
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x8
+(Info): Translating (instruction) virtual address 0x44
+(Log):  CPU 0 Xlation Hit: page/frame 8->1
+(Info): Fetching instruction from physical address 0xc
+(Info): Advancing time to 187
+(Info): CPU 0 executing instruction 'branch_eq 5' for process 1 at ip va/pa 0x44/0xc
+(Info): *** (branch_eq 5) BranchEq Reg0=0x8 Reg1=0x8 instruction offset 0x5. New ip 0x58
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Fault: page 11
+(Info): Instruction page fault at 0x58 in process 1 (page number 11)
+(Info): Swapping out frame. Token: 85 paddr: 28 page 0xb pid 0 time 187
+(Info): Swapping in frame from info: Token: 71 paddr: 18 page 0xb pid 1 time 168 target paddr: 28 page 0xb pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 11->5
+(Log):  Instruction fault for Process y(1) at ip 0x58 resolved to physical address 0x28
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Hit: page/frame 11->5
+(Info): Fetching instruction from physical address 0x28
+(Info): Advancing time to 188
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 1 at ip va/pa 0x58/0x28
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x8, now 0xC
+(Info): Translating (instruction) virtual address 0x5c
+(Log):  CPU 0 Xlation Hit: page/frame 11->5
+(Info): Fetching instruction from physical address 0x2c
+(Info): Advancing time to 189
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x5c/0x2c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0xc
+(Info): Quantum expired for Process y(1) at time 189 after 4 ticks.
+(Info): Dispatching Process x(0) at time 189 with quantum 4.
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Fault: page 14
+(Info): Instruction page fault at 0x70 in process 0 (page number 14)
+(Info): Swapping out frame. Token: 86 paddr: 20 page 0x10 pid 1 time 189
+(Info): Swapping in frame from info: Token: 73 paddr: 38 page 0xe pid 0 time 169 target paddr: 20 page 0xe pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 14->4
+(Log):  Instruction fault for Process x(0) at ip 0x70 resolved to physical address 0x20
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Hit: page/frame 14->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Translating (data) virtual address 0xa8
+(Log):  CPU 0 Xlation Fault: page 21
+(Info): Data page fault at 0x70 in process 0 for data address 0xa8 (page number 21)
+(Info): Swapping out frame. Token: 87 paddr: 18 page 0x11 pid 1 time 189
+(Info): Swapping in frame from info: Token: 80 paddr: 10 page 0x15 pid 0 time 180 target paddr: 18 page 0x15 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 21->3
+(Log):  Data fault for Process x(0) at ip 0x70 at address 0xa8 resolved to physical address 0x18.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Hit: page/frame 14->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Translating (data) virtual address 0xa8
+(Log):  CPU 0 Xlation Hit: page/frame 21->3
+(Info): Data physical address 0x18
+(Info): Advancing time to 190
+(Info): CPU 0 executing instruction 'loadReg1Indirect 0' for process 0 at ip va/pa 0x70/0x20
+(Info): *** (loadReg1Indirect 0) 'Reg1 = *(pa)0x18' Reg1 was 0x18, now 0x10
+(Info): Translating (instruction) virtual address 0x74
+(Log):  CPU 0 Xlation Hit: page/frame 14->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Advancing time to 191
+(Info): CPU 0 executing instruction 'printreg1' for process 0 at ip va/pa 0x74/0x24
+(Info): *** (printreg1) 
+(Log):  [PrintReg 1]  0x10
+(Info): Translating (instruction) virtual address 0x78
+(Log):  CPU 0 Xlation Fault: page 15
+(Info): Instruction page fault at 0x78 in process 0 (page number 15)
+(Info): Swapping out frame. Token: 88 paddr: 10 page 0x7 pid 1 time 191
+(Info): Swapping in frame from info: Token: 74 paddr: 0 page 0xf pid 0 time 169 target paddr: 10 page 0xf pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 15->2
+(Log):  Instruction fault for Process x(0) at ip 0x78 resolved to physical address 0x10
+(Info): Translating (instruction) virtual address 0x78
+(Log):  CPU 0 Xlation Hit: page/frame 15->2
+(Info): Fetching instruction from physical address 0x10
+(Info): Advancing time to 192
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 0 at ip va/pa 0x78/0x10
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x10, now 0x14
+(Info): Translating (instruction) virtual address 0x7c
+(Log):  CPU 0 Xlation Hit: page/frame 15->2
+(Info): Fetching instruction from physical address 0x14
+(Info): Advancing time to 193
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x7c/0x14
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x14
+(Info): Quantum expired for Process x(0) at time 193 after 4 ticks.
+(Info): Dispatching Process y(1) at time 193 with quantum 4.
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Fault: page 12
+(Info): Instruction page fault at 0x60 in process 1 (page number 12)
+(Info): Swapping out frame. Token: 89 paddr: 0 page 0x14 pid 1 time 193
+(Info): Swapping in frame from info: Token: 75 paddr: 30 page 0xc pid 1 time 171 target paddr: 0 page 0xc pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 12->0
+(Log):  Instruction fault for Process y(1) at ip 0x60 resolved to physical address 0x0
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Hit: page/frame 12->0
+(Info): Fetching instruction from physical address 0x0
+(Info): Advancing time to 194
+(Info): CPU 0 executing instruction 'loadReg1PageAddr 0003' for process 1 at ip va/pa 0x60/0x0
+(Info): *** (loadReg1PageAddr 0003) 'Reg1 = 0x18' Reg1 now 0x18
+(Info): Translating (instruction) virtual address 0x64
+(Log):  CPU 0 Xlation Hit: page/frame 12->0
+(Info): Fetching instruction from physical address 0x4
+(Info): Advancing time to 195
+(Info): CPU 0 executing instruction 'branch_eq 10' for process 1 at ip va/pa 0x64/0x4
+(Info): *** (branch_eq 10) BranchEq Reg0=0xC Reg1=0x18 instruction offset 0xA. New ip 0x68
+(Info): Translating (instruction) virtual address 0x68
+(Log):  CPU 0 Xlation Fault: page 13
+(Info): Instruction page fault at 0x68 in process 1 (page number 13)
+(Info): Swapping out frame. Token: 90 paddr: 38 page 0xc pid 0 time 195
+(Info): Swapping in frame from info: Token: 76 paddr: 8 page 0xd pid 1 time 173 target paddr: 38 page 0xd pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 13->7
+(Log):  Instruction fault for Process y(1) at ip 0x68 resolved to physical address 0x38
+(Info): Translating (instruction) virtual address 0x68
+(Log):  CPU 0 Xlation Hit: page/frame 13->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Advancing time to 196
+(Info): CPU 0 executing instruction 'incrReg0 -4' for process 1 at ip va/pa 0x68/0x38
+(Info): *** (incrReg0 -4) 'Reg0 += 0xFFFFFFFC' Reg0 was 0xC, now 0x8
+(Info): Translating (instruction) virtual address 0x6c
+(Log):  CPU 0 Xlation Hit: page/frame 13->7
+(Info): Fetching instruction from physical address 0x3c
+(Info): Advancing time to 197
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x6c/0x3c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x8
+(Info): Quantum expired for Process y(1) at time 197 after 4 ticks.
+(Info): Dispatching Process x(0) at time 197 with quantum 4.
+(Info): Translating (instruction) virtual address 0x80
+(Log):  CPU 0 Xlation Fault: page 16
+(Info): Instruction page fault at 0x80 in process 0 (page number 16)
+(Info): Swapping out frame. Token: 91 paddr: 30 page 0xd pid 0 time 197
+(Info): Swapping in frame from info: Token: 77 paddr: 28 page 0x10 pid 0 time 175 target paddr: 30 page 0x10 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 16->6
+(Log):  Instruction fault for Process x(0) at ip 0x80 resolved to physical address 0x30
+(Info): Translating (instruction) virtual address 0x80
+(Log):  CPU 0 Xlation Hit: page/frame 16->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 198
+(Info): CPU 0 executing instruction 'incrReg1 4' for process 0 at ip va/pa 0x80/0x30
+(Info): *** (incrReg1 4) 'Reg1 += 0x4' Reg1 was 0x10, now 0x14
+(Info): Translating (instruction) virtual address 0x84
+(Log):  CPU 0 Xlation Hit: page/frame 16->6
+(Info): Fetching instruction from physical address 0x34
+(Info): Advancing time to 199
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x84/0x34
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x14
+(Info): Translating (instruction) virtual address 0x88
+(Log):  CPU 0 Xlation Fault: page 17
+(Info): Instruction page fault at 0x88 in process 0 (page number 17)
+(Info): Swapping out frame. Token: 92 paddr: 8 page 0x8 pid 1 time 199
+(Info): Swapping in frame from info: Token: 78 paddr: 20 page 0x11 pid 0 time 177 target paddr: 8 page 0x11 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 17->1
+(Log):  Instruction fault for Process x(0) at ip 0x88 resolved to physical address 0x8
+(Info): Translating (instruction) virtual address 0x88
+(Log):  CPU 0 Xlation Hit: page/frame 17->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Advancing time to 200
+(Info): CPU 0 executing instruction 'branch_uc -19' for process 0 at ip va/pa 0x88/0x8
+(Info): *** (branch_uc -19) Branch to instruction offset 0xFFFFFFED. IP was 0x88, now 0x3C
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Fault: page 7
+(Info): Instruction page fault at 0x3c in process 0 (page number 7)
+(Info): Swapping out frame. Token: 93 paddr: 28 page 0xb pid 1 time 200
+(Info): Swapping in frame from info: Token: 79 paddr: 18 page 0x7 pid 0 time 179 target paddr: 28 page 0x7 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 7->5
+(Log):  Instruction fault for Process x(0) at ip 0x3c resolved to physical address 0x2c
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Hit: page/frame 7->5
+(Info): Fetching instruction from physical address 0x2c
+(Info): Translating (data) virtual address 0xac
+(Log):  CPU 0 Xlation Hit: page/frame 21->3
+(Info): Data physical address 0x1c
+(Info): Advancing time to 201
+(Info): CPU 0 executing instruction 'loadReg0Indirect 0' for process 0 at ip va/pa 0x3c/0x2c
+(Info): *** (loadReg0Indirect 0) 'Reg0 = *(pa)0x1C' Reg0 was 0x14, now 0x14
+(Info): Quantum expired for Process x(0) at time 201 after 4 ticks.
+(Info): Dispatching Process y(1) at time 201 with quantum 4.
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Fault: page 14
+(Info): Instruction page fault at 0x70 in process 1 (page number 14)
+(Info): Swapping out frame. Token: 94 paddr: 20 page 0xe pid 0 time 201
+(Info): Swapping in frame from info: Token: 82 paddr: 38 page 0xe pid 1 time 181 target paddr: 20 page 0xe pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 14->4
+(Log):  Instruction fault for Process y(1) at ip 0x70 resolved to physical address 0x20
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Hit: page/frame 14->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Translating (data) virtual address 0xa0
+(Log):  CPU 0 Xlation Fault: page 20
+(Info): Data page fault at 0x70 in process 1 for data address 0xa0 (page number 20)
+(Info): Swapping out frame. Token: 95 paddr: 10 page 0xf pid 0 time 201
+(Info): Swapping in frame from info: Token: 89 paddr: 0 page 0x14 pid 1 time 193 target paddr: 10 page 0x14 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 20->2
+(Log):  Data fault for Process y(1) at ip 0x70 at address 0xa0 resolved to physical address 0x10.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Hit: page/frame 14->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Translating (data) virtual address 0xa0
+(Log):  CPU 0 Xlation Hit: page/frame 20->2
+(Info): Data physical address 0x10
+(Info): Advancing time to 202
+(Info): CPU 0 executing instruction 'loadReg1Indirect 0' for process 1 at ip va/pa 0x70/0x20
+(Info): *** (loadReg1Indirect 0) 'Reg1 = *(pa)0x10' Reg1 was 0x18, now 0x8
+(Info): Translating (instruction) virtual address 0x74
+(Log):  CPU 0 Xlation Hit: page/frame 14->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Advancing time to 203
+(Info): CPU 0 executing instruction 'printreg1' for process 1 at ip va/pa 0x74/0x24
+(Info): *** (printreg1) 
+(Log):  [PrintReg 1]  0x8
+(Info): Translating (instruction) virtual address 0x78
+(Log):  CPU 0 Xlation Fault: page 15
+(Info): Instruction page fault at 0x78 in process 1 (page number 15)
+(Info): Swapping out frame. Token: 96 paddr: 0 page 0xc pid 1 time 203
+(Info): Swapping in frame from info: Token: 83 paddr: 30 page 0xf pid 1 time 183 target paddr: 0 page 0xf pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 15->0
+(Log):  Instruction fault for Process y(1) at ip 0x78 resolved to physical address 0x0
+(Info): Translating (instruction) virtual address 0x78
+(Log):  CPU 0 Xlation Hit: page/frame 15->0
+(Info): Fetching instruction from physical address 0x0
+(Info): Advancing time to 204
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 1 at ip va/pa 0x78/0x0
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x8, now 0xC
+(Info): Translating (instruction) virtual address 0x7c
+(Log):  CPU 0 Xlation Hit: page/frame 15->0
+(Info): Fetching instruction from physical address 0x4
+(Info): Advancing time to 205
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x7c/0x4
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0xc
+(Info): Quantum expired for Process y(1) at time 205 after 4 ticks.
+(Info): Dispatching Process x(0) at time 205 with quantum 4.
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Fault: page 8
+(Info): Instruction page fault at 0x40 in process 0 (page number 8)
+(Info): Swapping out frame. Token: 97 paddr: 38 page 0xd pid 1 time 205
+(Info): Swapping in frame from info: Token: 84 paddr: 8 page 0x8 pid 0 time 185 target paddr: 38 page 0x8 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 8->7
+(Log):  Instruction fault for Process x(0) at ip 0x40 resolved to physical address 0x38
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Hit: page/frame 8->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Advancing time to 206
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x40/0x38
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x14
+(Info): Translating (instruction) virtual address 0x44
+(Log):  CPU 0 Xlation Hit: page/frame 8->7
+(Info): Fetching instruction from physical address 0x3c
+(Info): Advancing time to 207
+(Info): CPU 0 executing instruction 'branch_eq 5' for process 0 at ip va/pa 0x44/0x3c
+(Info): *** (branch_eq 5) BranchEq Reg0=0x14 Reg1=0x14 instruction offset 0x5. New ip 0x58
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Fault: page 11
+(Info): Instruction page fault at 0x58 in process 0 (page number 11)
+(Info): Swapping out frame. Token: 98 paddr: 30 page 0x10 pid 0 time 207
+(Info): Swapping in frame from info: Token: 85 paddr: 28 page 0xb pid 0 time 187 target paddr: 30 page 0xb pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 11->6
+(Log):  Instruction fault for Process x(0) at ip 0x58 resolved to physical address 0x30
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Hit: page/frame 11->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 208
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 0 at ip va/pa 0x58/0x30
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x14, now 0x18
+(Info): Translating (instruction) virtual address 0x5c
+(Log):  CPU 0 Xlation Hit: page/frame 11->6
+(Info): Fetching instruction from physical address 0x34
+(Info): Advancing time to 209
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x5c/0x34
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x18
+(Info): Quantum expired for Process x(0) at time 209 after 4 ticks.
+(Info): Dispatching Process y(1) at time 209 with quantum 4.
+(Info): Translating (instruction) virtual address 0x80
+(Log):  CPU 0 Xlation Fault: page 16
+(Info): Instruction page fault at 0x80 in process 1 (page number 16)
+(Info): Swapping out frame. Token: 99 paddr: 8 page 0x11 pid 0 time 209
+(Info): Swapping in frame from info: Token: 86 paddr: 20 page 0x10 pid 1 time 189 target paddr: 8 page 0x10 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 16->1
+(Log):  Instruction fault for Process y(1) at ip 0x80 resolved to physical address 0x8
+(Info): Translating (instruction) virtual address 0x80
+(Log):  CPU 0 Xlation Hit: page/frame 16->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Advancing time to 210
+(Info): CPU 0 executing instruction 'incrReg1 4' for process 1 at ip va/pa 0x80/0x8
+(Info): *** (incrReg1 4) 'Reg1 += 0x4' Reg1 was 0x8, now 0xC
+(Info): Translating (instruction) virtual address 0x84
+(Log):  CPU 0 Xlation Hit: page/frame 16->1
+(Info): Fetching instruction from physical address 0xc
+(Info): Advancing time to 211
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x84/0xc
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0xc
+(Info): Translating (instruction) virtual address 0x88
+(Log):  CPU 0 Xlation Fault: page 17
+(Info): Instruction page fault at 0x88 in process 1 (page number 17)
+(Info): Swapping out frame. Token: 100 paddr: 28 page 0x7 pid 0 time 211
+(Info): Swapping in frame from info: Token: 87 paddr: 18 page 0x11 pid 1 time 189 target paddr: 28 page 0x11 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 17->5
+(Log):  Instruction fault for Process y(1) at ip 0x88 resolved to physical address 0x28
+(Info): Translating (instruction) virtual address 0x88
+(Log):  CPU 0 Xlation Hit: page/frame 17->5
+(Info): Fetching instruction from physical address 0x28
+(Info): Advancing time to 212
+(Info): CPU 0 executing instruction 'branch_uc -19' for process 1 at ip va/pa 0x88/0x28
+(Info): *** (branch_uc -19) Branch to instruction offset 0xFFFFFFED. IP was 0x88, now 0x3C
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Fault: page 7
+(Info): Instruction page fault at 0x3c in process 1 (page number 7)
+(Info): Swapping out frame. Token: 101 paddr: 18 page 0x15 pid 0 time 212
+(Info): Swapping in frame from info: Token: 88 paddr: 10 page 0x7 pid 1 time 191 target paddr: 18 page 0x7 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 7->3
+(Log):  Instruction fault for Process y(1) at ip 0x3c resolved to physical address 0x1c
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Hit: page/frame 7->3
+(Info): Fetching instruction from physical address 0x1c
+(Info): Translating (data) virtual address 0xa4
+(Log):  CPU 0 Xlation Hit: page/frame 20->2
+(Info): Data physical address 0x14
+(Info): Advancing time to 213
+(Info): CPU 0 executing instruction 'loadReg0Indirect 0' for process 1 at ip va/pa 0x3c/0x1c
+(Info): *** (loadReg0Indirect 0) 'Reg0 = *(pa)0x14' Reg0 was 0xC, now 0xC
+(Info): Quantum expired for Process y(1) at time 213 after 4 ticks.
+(Info): Dispatching Process x(0) at time 213 with quantum 4.
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Fault: page 12
+(Info): Instruction page fault at 0x60 in process 0 (page number 12)
+(Info): Swapping out frame. Token: 102 paddr: 20 page 0xe pid 1 time 213
+(Info): Swapping in frame from info: Token: 90 paddr: 38 page 0xc pid 0 time 195 target paddr: 20 page 0xc pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 12->4
+(Log):  Instruction fault for Process x(0) at ip 0x60 resolved to physical address 0x20
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Hit: page/frame 12->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Advancing time to 214
+(Info): CPU 0 executing instruction 'loadReg1PageAddr 0003' for process 0 at ip va/pa 0x60/0x20
+(Info): *** (loadReg1PageAddr 0003) 'Reg1 = 0x18' Reg1 now 0x18
+(Info): Translating (instruction) virtual address 0x64
+(Log):  CPU 0 Xlation Hit: page/frame 12->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Advancing time to 215
+(Info): CPU 0 executing instruction 'branch_eq 10' for process 0 at ip va/pa 0x64/0x24
+(Info): *** (branch_eq 10) BranchEq Reg0=0x18 Reg1=0x18 instruction offset 0xA. New ip 0x8C
+(Info): Translating (instruction) virtual address 0x8c
+(Log):  CPU 0 Xlation Fault: page 17
+(Info): Instruction page fault at 0x8c in process 0 (page number 17)
+(Info): Swapping out frame. Token: 103 paddr: 0 page 0xf pid 1 time 215
+(Info): Swapping in frame from info: Token: 99 paddr: 8 page 0x11 pid 0 time 209 target paddr: 0 page 0x11 pid 0
+(Log):  CPU 0 Xlation Hit: page/frame 17->0
+(Log):  Instruction fault for Process x(0) at ip 0x8c resolved to physical address 0x4
+(Info): Translating (instruction) virtual address 0x8c
+(Log):  CPU 0 Xlation Hit: page/frame 17->0
+(Info): Fetching instruction from physical address 0x4
+(Info): Advancing time to 216
+(Info): CPU 0 executing instruction 'printStr Success!' for process 0 at ip va/pa 0x8c/0x4
+(Info): *** (printStr Success!) 
+(Log):  [PrintString] Success!
+(Info): Translating (instruction) virtual address 0x90
+(Log):  CPU 0 Xlation Fault: page 18
+(Info): Instruction page fault at 0x90 in process 0 (page number 18)
+(Info): Swapping out frame. Token: 104 paddr: 38 page 0x8 pid 0 time 216
+(Log):  CPU 0 Xlation Hit: page/frame 18->7
+(Log):  Instruction fault for Process x(0) at ip 0x90 resolved to physical address 0x38
+(Info): Translating (instruction) virtual address 0x90
+(Log):  CPU 0 Xlation Hit: page/frame 18->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Advancing time to 217
+(Info): CPU 0 executing instruction 'Syscall_Exit' for process 0 at ip va/pa 0x90/0x38
+(Info): *** (Syscall_Exit) 
+(Log):  OS Process x: No PTE at index [5][2]
+(Log):  OS Process x: No PTE at index [5][3]
+(Log):  OS Process x: No 2nd Level Page Table at index [6][]
+(Log):  OS Process x: No 2nd Level Page Table at index [7][]
+(Info): Deleting swapped page for Token: 0 vaddr 0 pid 0
+(Info): Deleting swapped page for Token: 1 vaddr 8 pid 0
+(Info): Deleting swapped page for Token: 2 vaddr 10 pid 0
+(Info): Deleting swapped page for Token: 3 vaddr 18 pid 0
+(Info): Deleting swapped page for Token: 6 vaddr 20 pid 0
+(Info): Deleting swapped page for Token: 7 vaddr 28 pid 0
+(Info): Deleting swapped page for Token: 8 vaddr 30 pid 0
+(Info): Deleting swapped page for Token: 100 vaddr 38 pid 0
+(Info): Deleting swapped page for Token: 104 vaddr 40 pid 0
+(Info): Deleting swapped page for Token: 91 vaddr 68 pid 0
+(Info): Deleting swapped page for Token: 94 vaddr 70 pid 0
+(Info): Deleting swapped page for Token: 95 vaddr 78 pid 0
+(Info): Deleting swapped page for Token: 98 vaddr 80 pid 0
+(Info): Deleting swapped page for Token: 33 vaddr 98 pid 0
+(Info): Deleting swapped page for Token: 72 vaddr a0 pid 0
+(Info): Deleting swapped page for Token: 101 vaddr a8 pid 0
+(Info): Process x(0) completed at time 217, used 128 ticks, and required 32 dispatches.
+(Log):  Process x(0) completed at time 217
+(Info): Dispatching Process y(1) at time 217 with quantum 4.
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Fault: page 8
+(Info): Instruction page fault at 0x40 in process 1 (page number 8)
+(Info): Swapping in frame from info: Token: 92 paddr: 8 page 0x8 pid 1 time 199 target paddr: 30 page 0x8 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 8->6
+(Log):  Instruction fault for Process y(1) at ip 0x40 resolved to physical address 0x30
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Hit: page/frame 8->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 218
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x40/0x30
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0xc
+(Info): Translating (instruction) virtual address 0x44
+(Log):  CPU 0 Xlation Hit: page/frame 8->6
+(Info): Fetching instruction from physical address 0x34
+(Info): Advancing time to 219
+(Info): CPU 0 executing instruction 'branch_eq 5' for process 1 at ip va/pa 0x44/0x34
+(Info): *** (branch_eq 5) BranchEq Reg0=0xC Reg1=0xC instruction offset 0x5. New ip 0x58
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Fault: page 11
+(Info): Instruction page fault at 0x58 in process 1 (page number 11)
+(Info): Swapping in frame from info: Token: 93 paddr: 28 page 0xb pid 1 time 200 target paddr: 20 page 0xb pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 11->4
+(Log):  Instruction fault for Process y(1) at ip 0x58 resolved to physical address 0x20
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Hit: page/frame 11->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Advancing time to 220
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 1 at ip va/pa 0x58/0x20
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0xC, now 0x10
+(Info): Translating (instruction) virtual address 0x5c
+(Log):  CPU 0 Xlation Hit: page/frame 11->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Advancing time to 221
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x5c/0x24
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x10
+(Info): Quantum expired for Process y(1) at time 221 after 4 ticks.
+(Info): Dispatching Process y(1) at time 221 with quantum 4.
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Fault: page 12
+(Info): Instruction page fault at 0x60 in process 1 (page number 12)
+(Info): Swapping in frame from info: Token: 96 paddr: 0 page 0xc pid 1 time 203 target paddr: 0 page 0xc pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 12->0
+(Log):  Instruction fault for Process y(1) at ip 0x60 resolved to physical address 0x0
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Hit: page/frame 12->0
+(Info): Fetching instruction from physical address 0x0
+(Info): Advancing time to 222
+(Info): CPU 0 executing instruction 'loadReg1PageAddr 0003' for process 1 at ip va/pa 0x60/0x0
+(Info): *** (loadReg1PageAddr 0003) 'Reg1 = 0x18' Reg1 now 0x18
+(Info): Translating (instruction) virtual address 0x64
+(Log):  CPU 0 Xlation Hit: page/frame 12->0
+(Info): Fetching instruction from physical address 0x4
+(Info): Advancing time to 223
+(Info): CPU 0 executing instruction 'branch_eq 10' for process 1 at ip va/pa 0x64/0x4
+(Info): *** (branch_eq 10) BranchEq Reg0=0x10 Reg1=0x18 instruction offset 0xA. New ip 0x68
+(Info): Translating (instruction) virtual address 0x68
+(Log):  CPU 0 Xlation Fault: page 13
+(Info): Instruction page fault at 0x68 in process 1 (page number 13)
+(Info): Swapping in frame from info: Token: 97 paddr: 38 page 0xd pid 1 time 205 target paddr: 38 page 0xd pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 13->7
+(Log):  Instruction fault for Process y(1) at ip 0x68 resolved to physical address 0x38
+(Info): Translating (instruction) virtual address 0x68
+(Log):  CPU 0 Xlation Hit: page/frame 13->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Advancing time to 224
+(Info): CPU 0 executing instruction 'incrReg0 -4' for process 1 at ip va/pa 0x68/0x38
+(Info): *** (incrReg0 -4) 'Reg0 += 0xFFFFFFFC' Reg0 was 0x10, now 0xC
+(Info): Translating (instruction) virtual address 0x6c
+(Log):  CPU 0 Xlation Hit: page/frame 13->7
+(Info): Fetching instruction from physical address 0x3c
+(Info): Advancing time to 225
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x6c/0x3c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0xc
+(Info): Quantum expired for Process y(1) at time 225 after 4 ticks.
+(Info): Dispatching Process y(1) at time 225 with quantum 4.
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Fault: page 14
+(Info): Instruction page fault at 0x70 in process 1 (page number 14)
+(Info): Swapping out frame. Token: 104 paddr: 8 page 0x10 pid 1 time 225
+(Info): Swapping in frame from info: Token: 102 paddr: 20 page 0xe pid 1 time 213 target paddr: 8 page 0xe pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 14->1
+(Log):  Instruction fault for Process y(1) at ip 0x70 resolved to physical address 0x8
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Hit: page/frame 14->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Translating (data) virtual address 0xa4
+(Log):  CPU 0 Xlation Hit: page/frame 20->2
+(Info): Data physical address 0x14
+(Info): Advancing time to 226
+(Info): CPU 0 executing instruction 'loadReg1Indirect 0' for process 1 at ip va/pa 0x70/0x8
+(Info): *** (loadReg1Indirect 0) 'Reg1 = *(pa)0x14' Reg1 was 0x18, now 0xC
+(Info): Translating (instruction) virtual address 0x74
+(Log):  CPU 0 Xlation Hit: page/frame 14->1
+(Info): Fetching instruction from physical address 0xc
+(Info): Advancing time to 227
+(Info): CPU 0 executing instruction 'printreg1' for process 1 at ip va/pa 0x74/0xc
+(Info): *** (printreg1) 
+(Log):  [PrintReg 1]  0xc
+(Info): Translating (instruction) virtual address 0x78
+(Log):  CPU 0 Xlation Fault: page 15
+(Info): Instruction page fault at 0x78 in process 1 (page number 15)
+(Info): Swapping out frame. Token: 105 paddr: 28 page 0x11 pid 1 time 227
+(Info): Swapping in frame from info: Token: 103 paddr: 0 page 0xf pid 1 time 215 target paddr: 28 page 0xf pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 15->5
+(Log):  Instruction fault for Process y(1) at ip 0x78 resolved to physical address 0x28
+(Info): Translating (instruction) virtual address 0x78
+(Log):  CPU 0 Xlation Hit: page/frame 15->5
+(Info): Fetching instruction from physical address 0x28
+(Info): Advancing time to 228
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 1 at ip va/pa 0x78/0x28
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0xC, now 0x10
+(Info): Translating (instruction) virtual address 0x7c
+(Log):  CPU 0 Xlation Hit: page/frame 15->5
+(Info): Fetching instruction from physical address 0x2c
+(Info): Advancing time to 229
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x7c/0x2c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x10
+(Info): Quantum expired for Process y(1) at time 229 after 4 ticks.
+(Info): Dispatching Process y(1) at time 229 with quantum 4.
+(Info): Translating (instruction) virtual address 0x80
+(Log):  CPU 0 Xlation Fault: page 16
+(Info): Instruction page fault at 0x80 in process 1 (page number 16)
+(Info): Swapping out frame. Token: 106 paddr: 18 page 0x7 pid 1 time 229
+(Info): Swapping in frame from info: Token: 104 paddr: 8 page 0x10 pid 1 time 225 target paddr: 18 page 0x10 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 16->3
+(Log):  Instruction fault for Process y(1) at ip 0x80 resolved to physical address 0x18
+(Info): Translating (instruction) virtual address 0x80
+(Log):  CPU 0 Xlation Hit: page/frame 16->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Advancing time to 230
+(Info): CPU 0 executing instruction 'incrReg1 4' for process 1 at ip va/pa 0x80/0x18
+(Info): *** (incrReg1 4) 'Reg1 += 0x4' Reg1 was 0xC, now 0x10
+(Info): Translating (instruction) virtual address 0x84
+(Log):  CPU 0 Xlation Hit: page/frame 16->3
+(Info): Fetching instruction from physical address 0x1c
+(Info): Advancing time to 231
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x84/0x1c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x10
+(Info): Translating (instruction) virtual address 0x88
+(Log):  CPU 0 Xlation Fault: page 17
+(Info): Instruction page fault at 0x88 in process 1 (page number 17)
+(Info): Swapping out frame. Token: 107 paddr: 30 page 0x8 pid 1 time 231
+(Info): Swapping in frame from info: Token: 105 paddr: 28 page 0x11 pid 1 time 227 target paddr: 30 page 0x11 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 17->6
+(Log):  Instruction fault for Process y(1) at ip 0x88 resolved to physical address 0x30
+(Info): Translating (instruction) virtual address 0x88
+(Log):  CPU 0 Xlation Hit: page/frame 17->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 232
+(Info): CPU 0 executing instruction 'branch_uc -19' for process 1 at ip va/pa 0x88/0x30
+(Info): *** (branch_uc -19) Branch to instruction offset 0xFFFFFFED. IP was 0x88, now 0x3C
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Fault: page 7
+(Info): Instruction page fault at 0x3c in process 1 (page number 7)
+(Info): Swapping out frame. Token: 108 paddr: 20 page 0xb pid 1 time 232
+(Info): Swapping in frame from info: Token: 106 paddr: 18 page 0x7 pid 1 time 229 target paddr: 20 page 0x7 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 7->4
+(Log):  Instruction fault for Process y(1) at ip 0x3c resolved to physical address 0x24
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Hit: page/frame 7->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Translating (data) virtual address 0xa8
+(Log):  CPU 0 Xlation Fault: page 21
+(Info): Data page fault at 0x3c in process 1 for data address 0xa8 (page number 21)
+(Info): Swapping out frame. Token: 109 paddr: 0 page 0xc pid 1 time 232
+(Info): Swapping in frame from info: Token: 40 paddr: 20 page 0x15 pid 1 time 117 target paddr: 0 page 0x15 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 21->0
+(Log):  Data fault for Process y(1) at ip 0x3c at address 0xa8 resolved to physical address 0x0.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Hit: page/frame 7->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Translating (data) virtual address 0xa8
+(Log):  CPU 0 Xlation Hit: page/frame 21->0
+(Info): Data physical address 0x0
+(Info): Advancing time to 233
+(Info): CPU 0 executing instruction 'loadReg0Indirect 0' for process 1 at ip va/pa 0x3c/0x24
+(Info): *** (loadReg0Indirect 0) 'Reg0 = *(pa)0x0' Reg0 was 0x10, now 0x10
+(Info): Quantum expired for Process y(1) at time 233 after 4 ticks.
+(Info): Dispatching Process y(1) at time 233 with quantum 4.
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Fault: page 8
+(Info): Instruction page fault at 0x40 in process 1 (page number 8)
+(Info): Swapping out frame. Token: 110 paddr: 38 page 0xd pid 1 time 233
+(Info): Swapping in frame from info: Token: 107 paddr: 30 page 0x8 pid 1 time 231 target paddr: 38 page 0x8 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 8->7
+(Log):  Instruction fault for Process y(1) at ip 0x40 resolved to physical address 0x38
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Hit: page/frame 8->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Advancing time to 234
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x40/0x38
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x10
+(Info): Translating (instruction) virtual address 0x44
+(Log):  CPU 0 Xlation Hit: page/frame 8->7
+(Info): Fetching instruction from physical address 0x3c
+(Info): Advancing time to 235
+(Info): CPU 0 executing instruction 'branch_eq 5' for process 1 at ip va/pa 0x44/0x3c
+(Info): *** (branch_eq 5) BranchEq Reg0=0x10 Reg1=0x10 instruction offset 0x5. New ip 0x58
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Fault: page 11
+(Info): Instruction page fault at 0x58 in process 1 (page number 11)
+(Info): Swapping out frame. Token: 111 paddr: 10 page 0x14 pid 1 time 235
+(Info): Swapping in frame from info: Token: 108 paddr: 20 page 0xb pid 1 time 232 target paddr: 10 page 0xb pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 11->2
+(Log):  Instruction fault for Process y(1) at ip 0x58 resolved to physical address 0x10
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Hit: page/frame 11->2
+(Info): Fetching instruction from physical address 0x10
+(Info): Advancing time to 236
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 1 at ip va/pa 0x58/0x10
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x10, now 0x14
+(Info): Translating (instruction) virtual address 0x5c
+(Log):  CPU 0 Xlation Hit: page/frame 11->2
+(Info): Fetching instruction from physical address 0x14
+(Info): Advancing time to 237
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x5c/0x14
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x14
+(Info): Quantum expired for Process y(1) at time 237 after 4 ticks.
+(Info): Dispatching Process y(1) at time 237 with quantum 4.
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Fault: page 12
+(Info): Instruction page fault at 0x60 in process 1 (page number 12)
+(Info): Swapping out frame. Token: 112 paddr: 8 page 0xe pid 1 time 237
+(Info): Swapping in frame from info: Token: 109 paddr: 0 page 0xc pid 1 time 232 target paddr: 8 page 0xc pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 12->1
+(Log):  Instruction fault for Process y(1) at ip 0x60 resolved to physical address 0x8
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Hit: page/frame 12->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Advancing time to 238
+(Info): CPU 0 executing instruction 'loadReg1PageAddr 0003' for process 1 at ip va/pa 0x60/0x8
+(Info): *** (loadReg1PageAddr 0003) 'Reg1 = 0x18' Reg1 now 0x18
+(Info): Translating (instruction) virtual address 0x64
+(Log):  CPU 0 Xlation Hit: page/frame 12->1
+(Info): Fetching instruction from physical address 0xc
+(Info): Advancing time to 239
+(Info): CPU 0 executing instruction 'branch_eq 10' for process 1 at ip va/pa 0x64/0xc
+(Info): *** (branch_eq 10) BranchEq Reg0=0x14 Reg1=0x18 instruction offset 0xA. New ip 0x68
+(Info): Translating (instruction) virtual address 0x68
+(Log):  CPU 0 Xlation Fault: page 13
+(Info): Instruction page fault at 0x68 in process 1 (page number 13)
+(Info): Swapping out frame. Token: 113 paddr: 28 page 0xf pid 1 time 239
+(Info): Swapping in frame from info: Token: 110 paddr: 38 page 0xd pid 1 time 233 target paddr: 28 page 0xd pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 13->5
+(Log):  Instruction fault for Process y(1) at ip 0x68 resolved to physical address 0x28
+(Info): Translating (instruction) virtual address 0x68
+(Log):  CPU 0 Xlation Hit: page/frame 13->5
+(Info): Fetching instruction from physical address 0x28
+(Info): Advancing time to 240
+(Info): CPU 0 executing instruction 'incrReg0 -4' for process 1 at ip va/pa 0x68/0x28
+(Info): *** (incrReg0 -4) 'Reg0 += 0xFFFFFFFC' Reg0 was 0x14, now 0x10
+(Info): Translating (instruction) virtual address 0x6c
+(Log):  CPU 0 Xlation Hit: page/frame 13->5
+(Info): Fetching instruction from physical address 0x2c
+(Info): Advancing time to 241
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x6c/0x2c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x10
+(Info): Quantum expired for Process y(1) at time 241 after 4 ticks.
+(Info): Dispatching Process y(1) at time 241 with quantum 4.
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Fault: page 14
+(Info): Instruction page fault at 0x70 in process 1 (page number 14)
+(Info): Swapping out frame. Token: 114 paddr: 18 page 0x10 pid 1 time 241
+(Info): Swapping in frame from info: Token: 112 paddr: 8 page 0xe pid 1 time 237 target paddr: 18 page 0xe pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 14->3
+(Log):  Instruction fault for Process y(1) at ip 0x70 resolved to physical address 0x18
+(Info): Translating (instruction) virtual address 0x70
+(Log):  CPU 0 Xlation Hit: page/frame 14->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Translating (data) virtual address 0xa8
+(Log):  CPU 0 Xlation Hit: page/frame 21->0
+(Info): Data physical address 0x0
+(Info): Advancing time to 242
+(Info): CPU 0 executing instruction 'loadReg1Indirect 0' for process 1 at ip va/pa 0x70/0x18
+(Info): *** (loadReg1Indirect 0) 'Reg1 = *(pa)0x0' Reg1 was 0x18, now 0x10
+(Info): Translating (instruction) virtual address 0x74
+(Log):  CPU 0 Xlation Hit: page/frame 14->3
+(Info): Fetching instruction from physical address 0x1c
+(Info): Advancing time to 243
+(Info): CPU 0 executing instruction 'printreg1' for process 1 at ip va/pa 0x74/0x1c
+(Info): *** (printreg1) 
+(Log):  [PrintReg 1]  0x10
+(Info): Translating (instruction) virtual address 0x78
+(Log):  CPU 0 Xlation Fault: page 15
+(Info): Instruction page fault at 0x78 in process 1 (page number 15)
+(Info): Swapping out frame. Token: 115 paddr: 30 page 0x11 pid 1 time 243
+(Info): Swapping in frame from info: Token: 113 paddr: 28 page 0xf pid 1 time 239 target paddr: 30 page 0xf pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 15->6
+(Log):  Instruction fault for Process y(1) at ip 0x78 resolved to physical address 0x30
+(Info): Translating (instruction) virtual address 0x78
+(Log):  CPU 0 Xlation Hit: page/frame 15->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 244
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 1 at ip va/pa 0x78/0x30
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x10, now 0x14
+(Info): Translating (instruction) virtual address 0x7c
+(Log):  CPU 0 Xlation Hit: page/frame 15->6
+(Info): Fetching instruction from physical address 0x34
+(Info): Advancing time to 245
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x7c/0x34
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x14
+(Info): Quantum expired for Process y(1) at time 245 after 4 ticks.
+(Info): Dispatching Process y(1) at time 245 with quantum 4.
+(Info): Translating (instruction) virtual address 0x80
+(Log):  CPU 0 Xlation Fault: page 16
+(Info): Instruction page fault at 0x80 in process 1 (page number 16)
+(Info): Swapping out frame. Token: 116 paddr: 20 page 0x7 pid 1 time 245
+(Info): Swapping in frame from info: Token: 114 paddr: 18 page 0x10 pid 1 time 241 target paddr: 20 page 0x10 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 16->4
+(Log):  Instruction fault for Process y(1) at ip 0x80 resolved to physical address 0x20
+(Info): Translating (instruction) virtual address 0x80
+(Log):  CPU 0 Xlation Hit: page/frame 16->4
+(Info): Fetching instruction from physical address 0x20
+(Info): Advancing time to 246
+(Info): CPU 0 executing instruction 'incrReg1 4' for process 1 at ip va/pa 0x80/0x20
+(Info): *** (incrReg1 4) 'Reg1 += 0x4' Reg1 was 0x10, now 0x14
+(Info): Translating (instruction) virtual address 0x84
+(Log):  CPU 0 Xlation Hit: page/frame 16->4
+(Info): Fetching instruction from physical address 0x24
+(Info): Advancing time to 247
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x84/0x24
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x14
+(Info): Translating (instruction) virtual address 0x88
+(Log):  CPU 0 Xlation Fault: page 17
+(Info): Instruction page fault at 0x88 in process 1 (page number 17)
+(Info): Swapping out frame. Token: 117 paddr: 38 page 0x8 pid 1 time 247
+(Info): Swapping in frame from info: Token: 115 paddr: 30 page 0x11 pid 1 time 243 target paddr: 38 page 0x11 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 17->7
+(Log):  Instruction fault for Process y(1) at ip 0x88 resolved to physical address 0x38
+(Info): Translating (instruction) virtual address 0x88
+(Log):  CPU 0 Xlation Hit: page/frame 17->7
+(Info): Fetching instruction from physical address 0x38
+(Info): Advancing time to 248
+(Info): CPU 0 executing instruction 'branch_uc -19' for process 1 at ip va/pa 0x88/0x38
+(Info): *** (branch_uc -19) Branch to instruction offset 0xFFFFFFED. IP was 0x88, now 0x3C
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Fault: page 7
+(Info): Instruction page fault at 0x3c in process 1 (page number 7)
+(Info): Swapping out frame. Token: 118 paddr: 10 page 0xb pid 1 time 248
+(Info): Swapping in frame from info: Token: 116 paddr: 20 page 0x7 pid 1 time 245 target paddr: 10 page 0x7 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 7->2
+(Log):  Instruction fault for Process y(1) at ip 0x3c resolved to physical address 0x14
+(Info): Translating (instruction) virtual address 0x3c
+(Log):  CPU 0 Xlation Hit: page/frame 7->2
+(Info): Fetching instruction from physical address 0x14
+(Info): Translating (data) virtual address 0xac
+(Log):  CPU 0 Xlation Hit: page/frame 21->0
+(Info): Data physical address 0x4
+(Info): Advancing time to 249
+(Info): CPU 0 executing instruction 'loadReg0Indirect 0' for process 1 at ip va/pa 0x3c/0x14
+(Info): *** (loadReg0Indirect 0) 'Reg0 = *(pa)0x4' Reg0 was 0x14, now 0x14
+(Info): Quantum expired for Process y(1) at time 249 after 4 ticks.
+(Info): Dispatching Process y(1) at time 249 with quantum 4.
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Fault: page 8
+(Info): Instruction page fault at 0x40 in process 1 (page number 8)
+(Info): Swapping out frame. Token: 119 paddr: 8 page 0xc pid 1 time 249
+(Info): Swapping in frame from info: Token: 117 paddr: 38 page 0x8 pid 1 time 247 target paddr: 8 page 0x8 pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 8->1
+(Log):  Instruction fault for Process y(1) at ip 0x40 resolved to physical address 0x8
+(Info): Translating (instruction) virtual address 0x40
+(Log):  CPU 0 Xlation Hit: page/frame 8->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Advancing time to 250
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x40/0x8
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x14
+(Info): Translating (instruction) virtual address 0x44
+(Log):  CPU 0 Xlation Hit: page/frame 8->1
+(Info): Fetching instruction from physical address 0xc
+(Info): Advancing time to 251
+(Info): CPU 0 executing instruction 'branch_eq 5' for process 1 at ip va/pa 0x44/0xc
+(Info): *** (branch_eq 5) BranchEq Reg0=0x14 Reg1=0x14 instruction offset 0x5. New ip 0x58
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Fault: page 11
+(Info): Instruction page fault at 0x58 in process 1 (page number 11)
+(Info): Swapping out frame. Token: 120 paddr: 28 page 0xd pid 1 time 251
+(Info): Swapping in frame from info: Token: 118 paddr: 10 page 0xb pid 1 time 248 target paddr: 28 page 0xb pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 11->5
+(Log):  Instruction fault for Process y(1) at ip 0x58 resolved to physical address 0x28
+(Info): Translating (instruction) virtual address 0x58
+(Log):  CPU 0 Xlation Hit: page/frame 11->5
+(Info): Fetching instruction from physical address 0x28
+(Info): Advancing time to 252
+(Info): CPU 0 executing instruction 'incrReg0 4' for process 1 at ip va/pa 0x58/0x28
+(Info): *** (incrReg0 4) 'Reg0 += 0x4' Reg0 was 0x14, now 0x18
+(Info): Translating (instruction) virtual address 0x5c
+(Log):  CPU 0 Xlation Hit: page/frame 11->5
+(Info): Fetching instruction from physical address 0x2c
+(Info): Advancing time to 253
+(Info): CPU 0 executing instruction 'printreg0' for process 1 at ip va/pa 0x5c/0x2c
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x18
+(Info): Quantum expired for Process y(1) at time 253 after 4 ticks.
+(Info): Dispatching Process y(1) at time 253 with quantum 4.
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Fault: page 12
+(Info): Instruction page fault at 0x60 in process 1 (page number 12)
+(Info): Swapping out frame. Token: 121 paddr: 18 page 0xe pid 1 time 253
+(Info): Swapping in frame from info: Token: 119 paddr: 8 page 0xc pid 1 time 249 target paddr: 18 page 0xc pid 1
+(Log):  CPU 0 Xlation Hit: page/frame 12->3
+(Log):  Instruction fault for Process y(1) at ip 0x60 resolved to physical address 0x18
+(Info): Translating (instruction) virtual address 0x60
+(Log):  CPU 0 Xlation Hit: page/frame 12->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Advancing time to 254
+(Info): CPU 0 executing instruction 'loadReg1PageAddr 0003' for process 1 at ip va/pa 0x60/0x18
+(Info): *** (loadReg1PageAddr 0003) 'Reg1 = 0x18' Reg1 now 0x18
+(Info): Translating (instruction) virtual address 0x64
+(Log):  CPU 0 Xlation Hit: page/frame 12->3
+(Info): Fetching instruction from physical address 0x1c
+(Info): Advancing time to 255
+(Info): CPU 0 executing instruction 'branch_eq 10' for process 1 at ip va/pa 0x64/0x1c
+(Info): *** (branch_eq 10) BranchEq Reg0=0x18 Reg1=0x18 instruction offset 0xA. New ip 0x8C
+(Info): Translating (instruction) virtual address 0x8c
+(Log):  CPU 0 Xlation Hit: page/frame 17->7
+(Info): Fetching instruction from physical address 0x3c
+(Info): Advancing time to 256
+(Info): CPU 0 executing instruction 'printStr Success!' for process 1 at ip va/pa 0x8c/0x3c
+(Info): *** (printStr Success!) 
+(Log):  [PrintString] Success!
+(Info): Translating (instruction) virtual address 0x90
+(Log):  CPU 0 Xlation Fault: page 18
+(Info): Instruction page fault at 0x90 in process 1 (page number 18)
+(Info): Swapping out frame. Token: 122 paddr: 30 page 0xf pid 1 time 256
+(Log):  CPU 0 Xlation Hit: page/frame 18->6
+(Log):  Instruction fault for Process y(1) at ip 0x90 resolved to physical address 0x30
+(Info): Translating (instruction) virtual address 0x90
+(Log):  CPU 0 Xlation Hit: page/frame 18->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 257
+(Info): CPU 0 executing instruction 'Syscall_Exit' for process 1 at ip va/pa 0x90/0x30
+(Info): *** (Syscall_Exit) 
+(Log):  OS Process y: No PTE at index [5][2]
+(Log):  OS Process y: No PTE at index [5][3]
+(Log):  OS Process y: No 2nd Level Page Table at index [6][]
+(Log):  OS Process y: No 2nd Level Page Table at index [7][]
+(Info): Deleting swapped page for Token: 11 vaddr 0 pid 1
+(Info): Deleting swapped page for Token: 12 vaddr 8 pid 1
+(Info): Deleting swapped page for Token: 15 vaddr 10 pid 1
+(Info): Deleting swapped page for Token: 16 vaddr 18 pid 1
+(Info): Deleting swapped page for Token: 41 vaddr 20 pid 1
+(Info): Deleting swapped page for Token: 44 vaddr 28 pid 1
+(Info): Deleting swapped page for Token: 45 vaddr 30 pid 1
+(Info): Deleting swapped page for Token: 120 vaddr 68 pid 1
+(Info): Deleting swapped page for Token: 121 vaddr 70 pid 1
+(Info): Deleting swapped page for Token: 122 vaddr 78 pid 1
+(Info): Deleting swapped page for Token: 81 vaddr 98 pid 1
+(Info): Deleting swapped page for Token: 111 vaddr a0 pid 1
+(Info): Process y(1) completed at time 257, used 128 ticks, and required 32 dispatches.
+(Log):  Process y(1) completed at time 257
+(Info): CPU 0 going idle at time 257.
+(Log):  Finished at time 257
+(Log):  Statistics for CPU 0
+(Log):       Hits: 446. Faults: 136. Invalidates: 0.

@@ -1,0 +1,57 @@
+(Log):  Simulator using config file configs/config_1.properties
+(Log):  Processes: x
+(Log):  Trace for process x(0): [Syscall_Exit]
+(Log):  PageBytesLog2: 3
+(Log):  FrameCountLog2: 1
+(Log):  PageCountLog2: 5
+(Log):  LevelOnePTEntryCountLog2: 4
+(Log):  TLBEntryCountLog2: 1
+(Info): CPU 0 going idle at time 0.
+(Info): Advancing time to 1
+(Info): Starting Process x(0) at time 1.
+(Log):  CPU 0 TLB Invalidate.
+(Info): Dispatching Process x(0) at time 1 with quantum 4.
+(Info): Translating (instruction) virtual address 0x0
+(Log):  CPU 0 Xlation Fault: page 0
+(Info): Instruction page fault at 0x0 in process 0 (page number 0)
+(User): CPU 0 Using free frame 0 for Process x(0)
+(User): Zero frame before:
+(User): Dumping frame number 0 at time 1:
+(User): 	  0: 00000000
+(User): 	  1: 00000000
+(User): Zero frame after:
+(User): Dumping frame number 0 at time 1:
+(User): 	  0: 00000000
+(User): 	  1: 00000000
+(User): CPU 0 Using TLBEntry at slot 0 for page-to-frame mapping (0,0)
+(Log):  CPU 0 TLB Load Clean: page/frame 0->0
+(Log):  Instruction fault for Process x(0) at ip 0x0 resolved to physical address 0x0
+(Info): Translating (instruction) virtual address 0x0
+(Log):  CPU 0 Xlation Hit: page/frame 0->0
+(Info): Fetching instruction from physical address 0x0
+(Info): Advancing time to 2
+(Info): CPU 0 executing instruction 'Syscall_Exit' for process 0 at ip va/pa 0x0/0x0
+(Info): *** (Syscall_Exit) 
+(Log):  OS Process x: No PTE at index [0][1]
+(Log):  OS Process x: No 2nd Level Page Table at index [1][]
+(Log):  OS Process x: No 2nd Level Page Table at index [2][]
+(Log):  OS Process x: No 2nd Level Page Table at index [3][]
+(Log):  OS Process x: No 2nd Level Page Table at index [4][]
+(Log):  OS Process x: No 2nd Level Page Table at index [5][]
+(Log):  OS Process x: No 2nd Level Page Table at index [6][]
+(Log):  OS Process x: No 2nd Level Page Table at index [7][]
+(Log):  OS Process x: No 2nd Level Page Table at index [8][]
+(Log):  OS Process x: No 2nd Level Page Table at index [9][]
+(Log):  OS Process x: No 2nd Level Page Table at index [10][]
+(Log):  OS Process x: No 2nd Level Page Table at index [11][]
+(Log):  OS Process x: No 2nd Level Page Table at index [12][]
+(Log):  OS Process x: No 2nd Level Page Table at index [13][]
+(Log):  OS Process x: No 2nd Level Page Table at index [14][]
+(Log):  OS Process x: No 2nd Level Page Table at index [15][]
+(User): Reclaiming free frame 0 from process 0 at vaddr 0
+(Info): Process x(0) completed at time 2, used 1 ticks, and required 1 dispatches.
+(Log):  Process x(0) completed at time 2
+(Info): CPU 0 going idle at time 2.
+(Log):  Finished at time 2
+(Log):  Statistics for CPU 0
+(Log):       Hits: 1. Load Cleans: 1. Load Steals: 0. Faults: 1. Invalidates: 1.

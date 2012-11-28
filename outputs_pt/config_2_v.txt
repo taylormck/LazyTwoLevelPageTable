@@ -1,0 +1,49 @@
+(Log):  Simulator using config file configs/config_2.properties
+(Log):  Processes: x
+(Log):  Trace for process x(0): [noop, noop]
+(Log):  PageBytesLog2: 3
+(Log):  FrameCountLog2: 1
+(Log):  PageCountLog2: 5
+(Log):  LevelOnePTEntryCountLog2: 3
+(Info): CPU 0 going idle at time 0.
+(Info): Advancing time to 1
+(Info): Starting Process x(0) at time 1.
+(Info): Dispatching Process x(0) at time 1 with quantum 4.
+(Info): Translating (instruction) virtual address 0x0
+(Log):  CPU 0 Xlation Fault: page 0
+(Info): Instruction page fault at 0x0 in process 0 (page number 0)
+(Log):  CPU 0 Xlation Hit: page/frame 0->0
+(Log):  Instruction fault for Process x(0) at ip 0x0 resolved to physical address 0x0
+(Info): Translating (instruction) virtual address 0x0
+(Log):  CPU 0 Xlation Hit: page/frame 0->0
+(Info): Fetching instruction from physical address 0x0
+(Info): Advancing time to 2
+(Info): CPU 0 executing instruction 'noop' for process 0 at ip va/pa 0x0/0x0
+(Info): *** (noop) 
+(Info): Translating (instruction) virtual address 0x4
+(Log):  CPU 0 Xlation Hit: page/frame 0->0
+(Info): Fetching instruction from physical address 0x4
+(Info): Advancing time to 3
+(Info): CPU 0 executing instruction 'noop' for process 0 at ip va/pa 0x4/0x4
+(Info): *** (noop) 
+(Info): Translating (instruction) virtual address 0x8
+(Log):  CPU 0 PTE is Null at index [0][1]
+(Log):  CPU 0 Xlation Fault: page 1
+(Info): Instruction page fault at 0x8 in process 0 (page number 1)
+(Log):  Invalid instruction address for process 0 at ip: 0x8. page number 1
+(Log):  OS Process x: No PTE at index [0][1]
+(Log):  OS Process x: No PTE at index [0][2]
+(Log):  OS Process x: No PTE at index [0][3]
+(Log):  OS Process x: No 2nd Level Page Table at index [1][]
+(Log):  OS Process x: No 2nd Level Page Table at index [2][]
+(Log):  OS Process x: No 2nd Level Page Table at index [3][]
+(Log):  OS Process x: No 2nd Level Page Table at index [4][]
+(Log):  OS Process x: No 2nd Level Page Table at index [5][]
+(Log):  OS Process x: No 2nd Level Page Table at index [6][]
+(Log):  OS Process x: No 2nd Level Page Table at index [7][]
+(Info): Process x(0) completed at time 3, used 2 ticks, and required 1 dispatches.
+(Log):  Process x(0) completed at time 3
+(Info): CPU 0 going idle at time 3.
+(Log):  Finished at time 3
+(Log):  Statistics for CPU 0
+(Log):       Hits: 3. Faults: 2. Invalidates: 0.

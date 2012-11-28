@@ -1,0 +1,136 @@
+(Log):  Simulator using config file configs/config_5.properties
+(Log):  Processes: x
+(Log):  Trace for process x(0): [loadReg0Immediate 0, printreg0, loadReg1Immediate 2, printreg1, Syscall_Alloc, loadReg1PageAddr 1, loadReg1Indirect 1, branch_eq 4, printreg1, printStr ERROR Should have been 0!, branch_un 2, printStr SUCCESS!, Syscall_Exit]
+(Log):  PageBytesLog2: 3
+(Log):  FrameCountLog2: 8
+(Log):  PageCountLog2: 5
+(Log):  LevelOnePTEntryCountLog2: 2
+(Log):  TLBEntryCountLog2: 1
+(Info): CPU 0 going idle at time 0.
+(Info): Advancing time to 1
+(Info): Starting Process x(0) at time 1.
+(Log):  CPU 0 TLB Invalidate.
+(Info): Dispatching Process x(0) at time 1 with quantum 4.
+(Info): Translating (instruction) virtual address 0x0
+(Log):  CPU 0 Xlation Fault: page 0
+(Info): Instruction page fault at 0x0 in process 0 (page number 0)
+(Log):  CPU 0 TLB Load Clean: page/frame 0->0
+(Log):  Instruction fault for Process x(0) at ip 0x0 resolved to physical address 0x0
+(Info): Translating (instruction) virtual address 0x0
+(Log):  CPU 0 Xlation Hit: page/frame 0->0
+(Info): Fetching instruction from physical address 0x0
+(Info): Advancing time to 2
+(Info): CPU 0 executing instruction 'loadReg0Immediate 0' for process 0 at ip va/pa 0x0/0x0
+(Info): *** (loadReg0Immediate 0) 'Reg0 = 0x0' Reg0 now 0x0
+(Info): Translating (instruction) virtual address 0x4
+(Log):  CPU 0 Xlation Hit: page/frame 0->0
+(Info): Fetching instruction from physical address 0x4
+(Info): Advancing time to 3
+(Info): CPU 0 executing instruction 'printreg0' for process 0 at ip va/pa 0x4/0x4
+(Info): *** (printreg0) 
+(Log):  [PrintReg 0]  0x0
+(Info): Translating (instruction) virtual address 0x8
+(Log):  CPU 0 Xlation Fault: page 1
+(Info): Instruction page fault at 0x8 in process 0 (page number 1)
+(Log):  CPU 0 TLB Load Clean: page/frame 1->1
+(Log):  Instruction fault for Process x(0) at ip 0x8 resolved to physical address 0x8
+(Info): Translating (instruction) virtual address 0x8
+(Log):  CPU 0 Xlation Hit: page/frame 1->1
+(Info): Fetching instruction from physical address 0x8
+(Info): Advancing time to 4
+(Info): CPU 0 executing instruction 'loadReg1Immediate 2' for process 0 at ip va/pa 0x8/0x8
+(Info): *** (loadReg1Immediate 2) 'Reg1 = 0x2' Reg1 now 0x2
+(Info): Translating (instruction) virtual address 0xc
+(Log):  CPU 0 Xlation Hit: page/frame 1->1
+(Info): Fetching instruction from physical address 0xc
+(Info): Advancing time to 5
+(Info): CPU 0 executing instruction 'printreg1' for process 0 at ip va/pa 0xc/0xc
+(Info): *** (printreg1) 
+(Log):  [PrintReg 1]  0x2
+(Info): Quantum expired for Process x(0) at time 5 after 4 ticks.
+(Info): Dispatching Process x(0) at time 5 with quantum 4.
+(Info): Translating (instruction) virtual address 0x10
+(Log):  CPU 0 Xlation Fault: page 2
+(Info): Instruction page fault at 0x10 in process 0 (page number 2)
+(Log):  CPU 0 TLB Load Steal: page/frame 2->2 stolen from 0->0
+(Log):  Instruction fault for Process x(0) at ip 0x10 resolved to physical address 0x10
+(Info): Translating (instruction) virtual address 0x10
+(Log):  CPU 0 Xlation Hit: page/frame 2->2
+(Info): Fetching instruction from physical address 0x10
+(Info): Advancing time to 6
+(Info): CPU 0 executing instruction 'Syscall_Alloc' for process 0 at ip va/pa 0x10/0x10
+(Info): *** (Syscall_Alloc) SyscallAlloc start page 0x0 for 0x2 pages
+(Info): Translating (instruction) virtual address 0x14
+(Log):  CPU 0 Xlation Hit: page/frame 2->2
+(Info): Fetching instruction from physical address 0x14
+(Info): Advancing time to 7
+(Info): CPU 0 executing instruction 'loadReg1PageAddr 1' for process 0 at ip va/pa 0x14/0x14
+(Info): *** (loadReg1PageAddr 1) 'Reg1 = 0x8' Reg1 now 0x8
+(Info): Translating (instruction) virtual address 0x18
+(Log):  CPU 0 Xlation Fault: page 3
+(Info): Instruction page fault at 0x18 in process 0 (page number 3)
+(Log):  CPU 0 TLB Load Steal: page/frame 3->3 stolen from 1->1
+(Log):  Instruction fault for Process x(0) at ip 0x18 resolved to physical address 0x18
+(Info): Translating (instruction) virtual address 0x18
+(Log):  CPU 0 Xlation Hit: page/frame 3->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Translating (data) virtual address 0x40
+(Log):  CPU 0 Xlation Fault: page 8
+(Info): Data page fault at 0x18 in process 0 for data address 0x40 (page number 8)
+(Log):  CPU 0 TLB Load Steal: page/frame 8->4 stolen from 2->2
+(Log):  Data fault for Process x(0) at ip 0x18 at address 0x40 resolved to physical address 0x20.  Refecthing instruction.
+(Info): Translating (instruction) virtual address 0x18
+(Log):  CPU 0 Xlation Hit: page/frame 3->3
+(Info): Fetching instruction from physical address 0x18
+(Info): Translating (data) virtual address 0x40
+(Log):  CPU 0 Xlation Hit: page/frame 8->4
+(Info): Data physical address 0x20
+(Info): Advancing time to 8
+(Info): CPU 0 executing instruction 'loadReg1Indirect 1' for process 0 at ip va/pa 0x18/0x18
+(Info): *** (loadReg1Indirect 1) 'Reg1 = *(pa)0x20' Reg1 was 0x8, now 0x0
+(Info): Translating (instruction) virtual address 0x1c
+(Log):  CPU 0 Xlation Hit: page/frame 3->3
+(Info): Fetching instruction from physical address 0x1c
+(Info): Advancing time to 9
+(Info): CPU 0 executing instruction 'branch_eq 4' for process 0 at ip va/pa 0x1c/0x1c
+(Info): *** (branch_eq 4) BranchEq Reg0=0x0 Reg1=0x0 instruction offset 0x4. New ip 0x2C
+(Info): Quantum expired for Process x(0) at time 9 after 4 ticks.
+(Info): Dispatching Process x(0) at time 9 with quantum 4.
+(Info): Translating (instruction) virtual address 0x2c
+(Log):  CPU 0 Xlation Fault: page 5
+(Info): Instruction page fault at 0x2c in process 0 (page number 5)
+(Log):  CPU 0 TLB Load Steal: page/frame 5->5 stolen from 8->4
+(Log):  Instruction fault for Process x(0) at ip 0x2c resolved to physical address 0x2c
+(Info): Translating (instruction) virtual address 0x2c
+(Log):  CPU 0 Xlation Hit: page/frame 5->5
+(Info): Fetching instruction from physical address 0x2c
+(Info): Advancing time to 10
+(Info): CPU 0 executing instruction 'printStr SUCCESS!' for process 0 at ip va/pa 0x2c/0x2c
+(Info): *** (printStr SUCCESS!) 
+(Log):  [PrintString] SUCCESS!
+(Info): Translating (instruction) virtual address 0x30
+(Log):  CPU 0 Xlation Fault: page 6
+(Info): Instruction page fault at 0x30 in process 0 (page number 6)
+(Log):  CPU 0 TLB Load Steal: page/frame 6->6 stolen from 3->3
+(Log):  Instruction fault for Process x(0) at ip 0x30 resolved to physical address 0x30
+(Info): Translating (instruction) virtual address 0x30
+(Log):  CPU 0 Xlation Hit: page/frame 6->6
+(Info): Fetching instruction from physical address 0x30
+(Info): Advancing time to 11
+(Info): CPU 0 executing instruction 'Syscall_Exit' for process 0 at ip va/pa 0x30/0x30
+(Info): *** (Syscall_Exit) 
+(Log):  OS Process x: No PTE at index [1][1]
+(Log):  OS Process x: No PTE at index [1][2]
+(Log):  OS Process x: No PTE at index [1][3]
+(Log):  OS Process x: No PTE at index [1][4]
+(Log):  OS Process x: No PTE at index [1][5]
+(Log):  OS Process x: No PTE at index [1][6]
+(Log):  OS Process x: No PTE at index [1][7]
+(Log):  OS Process x: No 2nd Level Page Table at index [2][]
+(Log):  OS Process x: No 2nd Level Page Table at index [3][]
+(Info): Process x(0) completed at time 11, used 10 ticks, and required 3 dispatches.
+(Log):  Process x(0) completed at time 11
+(Info): CPU 0 going idle at time 11.
+(Log):  Finished at time 11
+(Log):  Statistics for CPU 0
+(Log):       Hits: 12. Load Cleans: 2. Load Steals: 5. Faults: 7. Invalidates: 1.
