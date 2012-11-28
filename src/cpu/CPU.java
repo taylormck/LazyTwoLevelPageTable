@@ -112,21 +112,12 @@ public class CPU extends CPUBase {
             logXlateFault(page_num);
             return -1;
         } catch (NullPointerException e) {
-    		// TODO
-            // This is where you should place your logic
-            // to detect/report the specific (L1) l1_ndx that's null 
-            // Use logPTEL1IndexNull(int ndx) to report a null L1_ndx
         	if (getPTBR()[l1_ndx] == null)
         		logPTEL1IndexNull(l1_ndx);
             logXlateFault(page_num);
         	return -1;
         }
-		// TODO
-        // This is where you should place your logic
-        // to detect/report a Null PTE Reference in the l2_entry 
-    	// Use logPTEIsNull(int ndx1, int ndx2) to report a null l2_entry (PageTableEntry reference)
-        // Be sure to also call logXlateFault(), and return -1 as well
-        
+
         if (pte == null) {
         	logPTEIsNull(l1_ndx, l2_ndx);
         	logXlateFault(page_num);
