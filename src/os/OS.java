@@ -29,6 +29,8 @@ public class OS extends simulator.OSBase {
     private final byte[] m_memory;
     private final int m_bytes_per_page;
     private final int m_page_count;
+    
+    private int page_number = 0;
 
     public OS(SystemInfo si) {
     	super(si);
@@ -109,12 +111,9 @@ public class OS extends simulator.OSBase {
             // initialize the page tables
             // This will need to be changed to do lazy allocation
     		// TODO
-            m_page_table = new PageTableEntry[m_l1entry_cnt][m_l2entry_cnt];
-            int page_number = 0;
+            m_page_table = new PageTableEntry[m_l1entry_cnt][];
             for (int i=0; i<m_l1entry_cnt; ++i) {
-                for (int j=0; j<m_l2entry_cnt; ++j) {
-                    m_page_table[i][j] = new PageTableEntry(page_number++);
-                }
+            	m_page_table[i] = null;
             }
         }
  
@@ -133,8 +132,16 @@ public class OS extends simulator.OSBase {
             // not all your 2nd level tables and the PTE references in them 
             // have been set up.
             for (int p=0; p<page_count; ++p, ++start_page) {
+                
+                if (m_page_table[page_to_l1index(start_page)] == null) {
+                	m_page_table[page_to_l1index(start_page)] = new PageTableEntry[m_l2entry_cnt];
+                }
+                
                 PageTableEntry pte = m_page_table[page_to_l1index(start_page)][page_to_l2index(start_page)];
-                if (pte.isValid()) {
+                
+                if (pte == null) {
+                	pte = new PageTableEntry(page_number++);
+                } else if (pte.isValid()) {
                     throw new IllegalArgumentException("Page " + pte.getPageNumber() + " is already allocated.");
                 }
                 pte.setValid();
@@ -142,6 +149,7 @@ public class OS extends simulator.OSBase {
             return true;
         }
         PageTableEntry getPTEforPage(int page_num) {
+        	if (m_page_table[page_to_l1index(page_num)] == null) return null;
             PageTableEntry pte = m_page_table[page_to_l1index(page_num)][page_to_l2index(page_num)];
             return pte;
         }
