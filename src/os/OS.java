@@ -451,7 +451,7 @@ public class OS extends simulator.OSBase {
 		 * to-be-swapped-out Page are wiped out of the TLB. 
 		 */
 		if (old_p == p) {
-			cpu.getTLBInvalidates();
+			cpu.invalidateTLB();
 		}
 	}
 
