@@ -132,6 +132,7 @@ public class OS extends simulator.OSBase {
 				if (pte == null) {
 					pte = new PageTableEntry(start_page);
 					pte.setValid();
+					m_page_table[page_to_l1index(start_page)][page_to_l2index(start_page)] = pte;
 				} else {
 					throw new IllegalArgumentException("Page " + pte.getPageNumber() + " is already allocated.");
 				}
