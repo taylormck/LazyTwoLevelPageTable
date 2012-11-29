@@ -94,7 +94,7 @@ public class CPU extends CPUBase {
 						current_time = e.referenced_time;
 					}
 				}
-				logTLBLoadSteal(e.page_number, e.frame_number, page_num, frame_num);
+				logTLBLoadSteal(page_num, frame_num, e.page_number, e.frame_number);
 				e.frame_number = frame_num;
 				e.page_number = page_num;
 				e.valid = true;

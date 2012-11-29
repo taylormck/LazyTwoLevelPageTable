@@ -304,9 +304,10 @@ public class OS extends simulator.OSBase {
 		cpu.setReg(1, ps.getReg(1));
 		// PTBR
 		cpu.setPTBR(getAddressSpace(p).getPTBR());
-		if (CPUBase.TLB_SUPPORTED)
+		if (CPUBase.TLB_SUPPORTED && p != cpu.getLastDispatchedProcess())
 			cpu.invalidateTLB();
 	}
+	
 	void undispatch(IProcess p, ICPU cpu) {
 		IProcessState ps = p.getState();
 		ps.setIP(cpu.getIP());
@@ -450,7 +451,7 @@ public class OS extends simulator.OSBase {
 		 * we need to make sure any TLB mappings for the
 		 * to-be-swapped-out Page are wiped out of the TLB. 
 		 */
-		if (old_p == p) {
+		if (CPUBase.TLB_SUPPORTED && old_p == p) {
 			cpu.invalidateTLB();
 		}
 	}
