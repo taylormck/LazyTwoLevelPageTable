@@ -304,11 +304,8 @@ public class OS extends simulator.OSBase {
 		cpu.setReg(1, ps.getReg(1));
 		// PTBR
 		cpu.setPTBR(getAddressSpace(p).getPTBR());
-		// TODO
-		/*
-		 * If we're using TLBs, and we're switching processes, 
-		 * we need to invalidate the TLBs 
-		 */
+		if (CPUBase.TLB_SUPPORTED)
+			cpu.invalidateTLB();
 	}
 	void undispatch(IProcess p, ICPU cpu) {
 		IProcessState ps = p.getState();
@@ -322,16 +319,11 @@ public class OS extends simulator.OSBase {
 
 	void updateReferences(ICPU icpu, IProcess p) {
 		if (CPUBase.TLB_SUPPORTED) {
-			// TODO
-			/**
-			 * When running with a TLB we need to iterate over all
-			 * the ITLBEntry's.
-			 * For those that are valid, we need to capture the
-			 * referenced time recorded in the ITLBEntry, and use
-			 * it to update our FrameInfo's reference time.
-			 */
-			// Iterate through the TLBEntries
-			throw new IllegalStateException("Implement updateReferences"); 
+			ITLBEntry[] TLBEntries = icpu.getTLBEntries();
+			for (ITLBEntry e : TLBEntries) {
+				if (e.isValid())
+					m_frame_info.setReferenced(e.getFrame(), e.getReferencedTime());
+			}
 		} 
 	}
 
@@ -458,6 +450,9 @@ public class OS extends simulator.OSBase {
 		 * we need to make sure any TLB mappings for the
 		 * to-be-swapped-out Page are wiped out of the TLB. 
 		 */
+		if (old_p == p) {
+			cpu.getTLBInvalidates();
+		}
 	}
 
 	void setAddressSpace(IProcess p, AddressSpace as) {
