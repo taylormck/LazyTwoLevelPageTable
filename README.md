@@ -1,4 +1,5 @@
-LazyL2Cache
-===========
+LazyTwoLevelPageTable
+=====================
 
-A simulation of a Lazy L2 cache written in Java
+A lazy, two level page table written in Java.
+Runs on a simulator.
